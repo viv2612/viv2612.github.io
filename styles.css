@@ -760,6 +760,7 @@ a {
   height: 22px;
   border-radius: 3px;
   opacity: 0.8;
+  z-index: 5;
 }
 
 .washi-coffee {
@@ -1602,9 +1603,10 @@ a {
 }
 
 .research-card {
-  width: 420px;
+  width: 520px;
   transform: rotate(-1deg);
   box-shadow: 4px 6px 20px rgba(37, 52, 79, 0.22);
+  padding: 1.2rem 1.6rem !important;
 }
 
 .research-status {
@@ -1650,6 +1652,10 @@ a {
   width: 430px;
   transform: rotate(0.8deg);
   box-shadow: 4px 6px 20px rgba(37, 52, 79, 0.22);
+}
+
+.research-postcard .card-text {
+  font-size: 0.85rem;
 }
 
 .research-responsibilities {
@@ -1911,6 +1917,14 @@ a {
   margin: 0 0 0.4rem 0;
   line-height: 2.6;
   word-spacing: 0.12em;
+}
+
+.research-subtitle,
+.gallery-subtitle {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1.1rem;
+  color: #111;
+  margin: 0.3rem 0 0 0;
 }
 
 .academics-bio {
@@ -2269,13 +2283,18 @@ a {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.gallery-polaroid {
+  background: #fff;
+  padding: 12px 12px 20px;
+  box-shadow: 4px 6px 20px rgba(37, 52, 79, 0.22);
+}
+
 .gallery-img {
   width: 100%;
-  height: 360px;
+  height: 320px;
   object-fit: cover;
   display: block;
-  box-shadow: 3px 5px 16px rgba(37, 52, 79, 0.22);
-  border-radius: 2px;
+  border-radius: 1px;
   cursor: pointer;
 }
 
@@ -2283,12 +2302,25 @@ a {
 
 .gallery-caption {
   font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-style: italic;
   color: var(--coffee);
   text-align: center;
-  margin-top: 0.65rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.1rem;
   opacity: 0.85;
+}
+
+.polaroid-date {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.75rem;
+  color: #999;
+  text-align: center;
+  margin: 0;
+}
+
+.gallery-item .washi-tape {
+  top: 1px;
 }
 
 .gallery-item-1 { transform: rotate(-1.5deg); }
