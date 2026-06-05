@@ -41,15 +41,82 @@
       <p class="journal-subtitle">thoughts, reflections, and little lessons from each season</p>
     </div>
 
-    <div class="journal-entry card">
-      <div class="washi-tape washi-caput"></div>
-      <h3 class="card-label">Fall 2025</h3>
-      <p class="card-text">My first semester in college! This semester came with a lot of responsibility that I didn't quite know how to manage at first. Finding a routine, and learning not to say yes to everything, was something I had to figure out the hard way.</p>
-      <p class="card-text">I also struggled a lot with comparison this semester and realized I had a pretty unhealthy relationship with what "success" actually meant. Starting as early as elementary school, so many things were framed as competitions with clear winners: science fair, Battle of the Books, and so on. You learned to measure how well you did by how much you outperformed someone else.</p>
-      <p class="card-text">Although I'm still a competitive person (as you can definitely tell from my CliftonStrengths), I started to redefine success for myself. Instead of measuring it against the skill sets of the people around me, I began valuing it based on how much I personally improved. There will always be someone who forms connections more easily than me, someone smarter, someone more fit, someone with better emotional poise, etc. That realization led to a motto that really stuck with me this semester: "Own lane, own race, own pace."</p>
-      <p class="card-text">I'm on my own journey, and everyone else is on theirs. My success shouldn't be defined by what they're doing because ultimately, that doesn't determine my future.</p>
-      <p class="card-text">Unrelated to all of that, I would highly recommend that every college freshman take a lighter course load their first semester! Spend time exploring campus and getting involved in different clubs rather than burying yourself in a textbook. I think we sometimes forget how much of a privilege it is to experience moments that we'll later look back on so fondly and wish we could relive. Yes, you're going to college for a degree, but you're also going for the people and the network.</p>
-      <p class="card-text">Don't get too tied down to the version of yourself on paper — the resume will build with time ♡</p>
+    <div class="journal-layout">
+
+      <!-- LEFT: featured entry + future cards -->
+      <div class="journal-left">
+
+        <!-- Featured entry -->
+        <div class="journal-featured card">
+          <div class="washi-tape washi-caput"></div>
+          <h3 class="journal-season">Fall 2025</h3>
+          <div class="journal-tags">
+            <span class="journal-tag">freshman year</span>
+            <span class="journal-tag">growth</span>
+            <span class="journal-tag">reflection</span>
+          </div>
+          <div class="journal-preview">
+            <p class="card-text">My first semester in college! This semester came with a lot of responsibility that I didn't quite know how to manage at first. Finding a routine, and learning not to say yes to everything, was something I had to figure out the hard way.</p>
+          </div>
+          <div class="journal-full" id="fall2025-full" style="display:none;">
+            <p class="card-text">I also struggled a lot with comparison this semester and realized I had a pretty unhealthy relationship with what "success" actually meant. Starting as early as elementary school, so many things were framed as competitions with clear winners: science fair, Battle of the Books, and so on. You learned to measure how well you did by how much you outperformed someone else.</p>
+            <p class="card-text">Although I'm still a competitive person (as you can definitely tell from my CliftonStrengths), I started to redefine success for myself. Instead of measuring it against the skill sets of the people around me, I began valuing it based on how much I personally improved. There will always be someone who forms connections more easily than me, someone smarter, someone more fit, someone with better emotional poise, etc. That realization led to a motto that really stuck with me this semester: "Own lane, own race, own pace."</p>
+            <p class="card-text">I'm on my own journey, and everyone else is on theirs. My success shouldn't be defined by what they're doing because ultimately, that doesn't determine my future.</p>
+            <p class="card-text">Unrelated to all of that, I would highly recommend that every college freshman take a lighter course load their first semester! Spend time exploring campus and getting involved in different clubs rather than burying yourself in a textbook. I think we sometimes forget how much of a privilege it is to experience moments that we'll later look back on so fondly and wish we could relive. Yes, you're going to college for a degree, but you're also going for the people and the network.</p>
+            <p class="card-text">Don't get too tied down to the version of yourself on paper — the resume will build with time ♡</p>
+          </div>
+          <button class="journal-toggle-btn" onclick="toggleEntry('fall2025-full', this)">read full reflection ⟶</button>
+        </div>
+
+        <!-- Future entries row -->
+        <div class="journal-future-row">
+          <div class="journal-future-card card journal-card-blue">
+            <div class="washi-tape washi-tan"></div>
+            <h4 class="journal-future-season">Spring 2026</h4>
+            <p class="journal-future-text">coming soon</p>
+          </div>
+          <div class="journal-future-card card journal-card-sage">
+            <div class="washi-tape washi-caput"></div>
+            <h4 class="journal-future-season">Summer 2026</h4>
+            <p class="journal-future-text">coming soon</p>
+          </div>
+          <div class="journal-future-card card journal-card-beige">
+            <div class="washi-tape washi-slate"></div>
+            <h4 class="journal-future-season">Sophomore Year</h4>
+            <p class="journal-future-text">new challenges, new perspective</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: journal index + band memories -->
+      <div class="journal-right">
+
+        <div class="journal-index card journal-card-navy">
+          <h3 class="journal-index-title">gratitude list</h3>
+          <ul class="journal-index-list">
+            <li>♡ my friends</li>
+            <li>♡ marching band</li>
+            <li>♡ beta xi</li>
+            <li>♡ good health</li>
+            <li>♡ being in a safe environment</li>
+          </ul>
+        </div>
+
+        <div class="journal-band card journal-card-kraft">
+          <div class="washi-tape washi-slate"></div>
+          <h3 class="journal-band-title">Bucket List</h3>
+          <p class="card-text">things i want to do this semester ✦</p>
+          <ul class="journal-index-list">
+            <li>☐ visit lake wauburg</li>
+            <li>☐ go to an away game</li>
+            <li>☐ join a committee in FLA</li>
+            <li>☐ spend more time doing research</li>
+          </ul>
+        </div>
+
+      </div>
+
     </div>
 
   </main>
@@ -78,6 +145,18 @@
     </div>
   </footer>
 
+  <script>
+    function toggleEntry(id, btn) {
+      const full = document.getElementById(id);
+      if (full.style.display === 'none') {
+        full.style.display = 'block';
+        btn.textContent = 'collapse ↑';
+      } else {
+        full.style.display = 'none';
+        btn.textContent = 'read full reflection ⟶';
+      }
+    }
+  </script>
   <script src="scripts.js"></script>
 </body>
 </html>
