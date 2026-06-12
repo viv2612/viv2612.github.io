@@ -2855,8 +2855,8 @@ a {
   .hero-name-group { margin-top: 1.5rem; }
   .hero-desc { line-height: 1.85; width: 300%; max-width: 300%; margin-top: 0.5rem; }
   /* Learn-more button: one line, centered under the bio */
-  .hero-learn-wrap { display: block; width: 300%; text-align: center; margin-top: -3.4rem; transform: translateX(16%); position: relative; z-index: 30; pointer-events: none; }
-  .hero-learn-wrap .hero-learn-more { pointer-events: auto; font-size: 0.6rem; padding: 0.24rem 0.65rem; }
+  .hero-learn-wrap { display: block; width: 300%; text-align: center; margin-top: -1.5rem; position: relative; z-index: 30; pointer-events: none; }
+  .hero-learn-wrap .hero-learn-more { pointer-events: auto; font-size: 0.72rem; padding: 0.28rem 0.8rem; }
   .hero-learn-more { margin-left: 0; white-space: nowrap; }
   /* Tagline: all three words stacked inside one olive box, sized to the last name */
   .hero-tagline {
