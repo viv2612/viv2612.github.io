@@ -92,9 +92,9 @@
 
       <div class="hero-name-group">
         <p class="hero-greeting">hi, i'm</p>
-        <h1 class="hero-name">vivienne<br>mcgaha <span class="hero-heart">♡</span></h1>
+        <h1 class="hero-name">vivienne<br>mcgaha&nbsp;<span class="hero-heart">♡</span></h1>
       </div>
-      <p class="hero-tagline">student &nbsp;·&nbsp; musician &nbsp;·&nbsp; creator</p>
+      <p class="hero-tagline"><span class="tag-word">student</span><span class="tag-sep">&nbsp;·&nbsp;</span><span class="tag-word">musician</span><span class="tag-sep">&nbsp;·&nbsp;</span><span class="tag-word">creator</span></p>
 
       <div class="hero-social-row">
         <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -105,7 +105,7 @@
 
       <p class="hero-desc">documenting growth, ideas, projects, and the little things that shape who i'm becoming.</p>
 
-      <a href="about.html" class="hero-learn-more">learn more about me ↓</a>
+      <span class="hero-learn-wrap"><a href="about.html" class="hero-learn-more">learn more about me ↓</a></span>
 
     </div>
 
@@ -120,21 +120,23 @@
     <!-- Right panel: portrait + stickies + deco -->
     <div class="hero-right">
 
-      <!-- Portrait -->
+      <!-- Portrait (corner tag anchored to it so it always sits on the photo) -->
       <div class="hero-portrait-wrap">
         <img src="images/redesign 1/pixel art me with border.png" class="hero-portrait" alt="Vivienne McGaha">
+        <img src="images/redesign 1/corner of the internet.png" class="hero-corner-tag" alt="">
       </div>
-      <img src="images/redesign 1/corner of the internet.png" class="hero-corner-tag" alt="">
-      <img src="images/redesign 1/one day.png" class="hero-one-day" alt="">
-      <div class="hero-sticky-note-wrap">
-        <img src="images/redesign 1/current sticky note.png" class="hero-sticky-note" alt="">
-        <span class="hero-sticky-label">currently</span>
-        <ul class="hero-sticky-items">
-          <li>studying for classes</li>
-          <li>building a mechanical keyboard</li>
-          <li>exploring virginia</li>
-          <li>on the search for a matt maltese vinyl</li>
-        </ul>
+      <div class="hero-notes-row">
+        <img src="images/redesign 1/one day.png" class="hero-one-day" alt="">
+        <div class="hero-sticky-note-wrap">
+          <img src="images/redesign 1/current sticky note.png" class="hero-sticky-note" alt="">
+          <span class="hero-sticky-label">currently</span>
+          <ul class="hero-sticky-items">
+            <li>studying for classes</li>
+            <li>building a mechanical keyboard</li>
+            <li>exploring virginia</li>
+            <li>on the search for a matt maltese vinyl</li>
+          </ul>
+        </div>
       </div>
 
 <!-- Flowers bottom-right -->
@@ -165,8 +167,8 @@
            data-img="images/datafables.png"
            data-color="#9B7EAE">
         <div class="push-pin pin-small"></div>
+        <div class="ribbon-clip"><div class="winner-badge">winner</div></div>
         <div class="project-img" style="background-image: url('images/datafables.png'); background-size: cover; background-position: center;">
-          <div class="winner-badge">3rd Place · Entertainment Track</div>
         </div>
         <div class="project-info">
           <h4>DataFables</h4>
