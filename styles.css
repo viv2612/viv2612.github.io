@@ -30,6 +30,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -41,6 +43,8 @@ body {
   background-size: 28px 28px;
   color: var(--space-cadet);
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -2851,7 +2855,8 @@ a {
   .hero-name-group { margin-top: 1.5rem; }
   .hero-desc { line-height: 1.85; width: 300%; max-width: 300%; margin-top: 0.5rem; }
   /* Learn-more button: one line, centered under the bio */
-  .hero-learn-wrap { display: block; width: 300%; text-align: center; margin-top: -0.5rem; }
+  .hero-learn-wrap { display: block; width: 300%; text-align: center; margin-top: -0.5rem; position: relative; z-index: 30; pointer-events: none; }
+  .hero-learn-wrap .hero-learn-more { pointer-events: auto; }
   .hero-learn-more { margin-left: 0; white-space: nowrap; }
   /* Tagline: all three words stacked inside one olive box, sized to the last name */
   .hero-tagline {
