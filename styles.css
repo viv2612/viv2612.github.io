@@ -2855,7 +2855,7 @@ a {
   .hero-name-group { margin-top: 1.5rem; }
   .hero-desc { line-height: 1.85; width: 300%; max-width: 300%; margin-top: 0.5rem; }
   /* Learn-more button: one line, centered under the bio */
-  .hero-learn-wrap { display: block; width: 300%; text-align: center; margin-top: -1.4rem; position: relative; z-index: 30; pointer-events: none; }
+  .hero-learn-wrap { display: block; width: 300%; text-align: center; margin-top: -1.5rem; position: relative; z-index: 30; pointer-events: none; }
   .hero-learn-wrap .hero-learn-more { pointer-events: auto; font-size: 0.72rem; padding: 0.28rem 0.8rem; }
   .hero-learn-more { margin-left: 0; white-space: nowrap; }
   /* Tagline: all three words stacked inside one olive box, sized to the last name */
@@ -2904,7 +2904,7 @@ a {
     justify-content: center;
     gap: 0.2rem;
     width: 100%;
-    margin-top: 1.25rem;
+    margin-top: 3rem;
   }
   .hero-one-day {
     position: relative;
@@ -2939,9 +2939,9 @@ a {
     width: 100%;
     z-index: 20;
   }
-  /* Projects title + caption sit lower on the koi image */
-  .hero-koi-projects-label { bottom: 0%; }
-  .hero-koi-projects-caption { transform: translateX(-50%) translateY(70%); }
+  /* Projects title + caption sit lower, down in the dark koi region (like desktop) */
+  .hero-koi-projects-label { bottom: -12%; }
+  .hero-koi-projects-caption { transform: translateX(-50%) translateY(110%); }
 
   /* Flowers: show below the notes, in normal flow */
   .hero-flowers-deco {
@@ -3062,7 +3062,7 @@ a {
   .projects-heart-doodle { display: none; }
   .hero-doodle-tl-sparkle { width: 46px; bottom: 0rem; left: 5%; }
   .hero-doodle-tr-sparkle { width: 40px; bottom: 1rem; right: 6%; left: auto; }
-  .hero-doodle-tr-orange { width: 32px; bottom: -1rem; right: 16%; left: auto; }
+  .hero-doodle-tr-orange { width: 32px; bottom: -1rem; right: 4%; left: auto; }
 
   /* Enlarge the projects doodle overlay so its left flowers clear project three */
   .projects-doodle-overlay { width: 112%; left: -6%; }
