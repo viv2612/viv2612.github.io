@@ -3076,6 +3076,10 @@ a {
   .wisdom-title-row { padding-left: 1.5rem; }
   .wisdom-content { padding: 0.1rem 1.5rem 2.5rem; }
 
+  /* Wisdom background meets the projects background (no body-cream seam between them) */
+  .wisdom-section { margin-top: -2rem; }
+  .wisdom-title-row { position: relative; z-index: 3; }
+
   /* Footer meets the cards (overlap matched to the bottom padding) — no gap, no clipping */
   .footer { margin-top: -2.5rem; }
 
