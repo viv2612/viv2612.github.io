@@ -1338,6 +1338,9 @@ a {
   border-radius: 16px;
   width: 520px;
   max-width: 92vw;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
   cursor: default;
@@ -1346,16 +1349,23 @@ a {
 
 .modal-close {
   position: absolute;
-  top: 12px;
-  right: 16px;
-  background: none;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
   border: none;
-  font-size: 1.5rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
   color: var(--coffee);
   cursor: pointer;
   line-height: 1;
-  z-index: 2;
-  opacity: 0.6;
+  z-index: 3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  opacity: 0.95;
   transition: opacity 0.15s;
 }
 
@@ -1365,10 +1375,12 @@ a {
   width: 100%;
   height: 240px;
   background: var(--slate-gray);
+  flex-shrink: 0;
 }
 
 .modal-body {
   padding: 1.5rem 1.75rem 2rem;
+  overflow-y: auto;
 }
 
 .modal-body h3 {
