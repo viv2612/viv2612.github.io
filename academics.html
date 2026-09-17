@@ -11,23 +11,23 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body>
+<body class="academics-page unified-page">
 
   <!-- Signature -->
   <div class="page-sig"><img src="images/redesign 1/signature paper tare.png" alt="vqm"><img src="images/redesign 1/academics plant.png" class="page-sig-leaves academics-plant" alt=""></div>
 
   <!-- ======= NAVIGATION ======= -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a class="marketing-home-brand" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="academics.html">Academics</a></li>
       <li><a href="journal.html">Journal</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -35,200 +35,124 @@
   <!-- ======= ACADEMICS CONTENT ======= -->
   <main class="academics-main">
 
-    <div class="section-header">
+    <div class="section-header reveal-fall">
       <div class="section-tape"></div>
       <h2 class="section-title">Academics</h2>
-      <p class="academics-bio">a growing record of learning, curiosity, and progress</p>
+      <p class="academics-bio">A Growing Record of Learning, Curiosity, and Progress</p>
+      <dl class="academic-header-facts" aria-label="University of Florida academic overview">
+        <div><dt>Program</dt><dd>BSBA — Marketing</dd></div>
+        <div><dt>GPA</dt><dd>3.83</dd></div>
+      </dl>
     </div>
 
-    <div class="academics-layout">
+    <div class="academic-journey">
+      <section class="academic-coursework" aria-labelledby="coursework-title">
+        <div class="academic-section-heading">
+          <p class="academic-kicker">Coursework</p>
+          <h3 id="coursework-title">My Academic Journey</h3>
+        </div>
+        <div class="coursework-grid">
+          <article class="coursework-card coursework-card-current">
+            <p class="coursework-term">Fall 2026</p>
+            <ul>
+              <li><span>MAR3023</span> Principles of Marketing</li>
+              <li><span>GEB2216</span> Professional Writing in Business</li>
+              <li><span>MUN1110</span> Gator Band</li>
+              <li><span>CLP2001</span> Personal Growth</li>
+              <li><span>PUR3622</span> Social Media Management</li>
+            </ul>
+          </article>
+          <article class="coursework-card coursework-card-compact">
+            <p class="coursework-term">Summer 2026</p>
+            <ul>
+              <li><span>ACG2071</span> Managerial Accounting</li>
+            </ul>
+          </article>
+          <article class="coursework-card">
+            <p class="coursework-term">Spring 2026</p>
+            <ul>
+              <li><span>ACG2021</span> Intro to Financial Accounting</li>
+              <li><span>QMB3250</span> Statistics for Business Decisions</li>
+              <li><span>BUL4443</span> Global Ethics in Business</li>
+              <li><span>COM2382</span> Communicating with AI</li>
+              <li><span>MAR2401</span> Sales Seminar</li>
+              <li><span>MUN1140</span> Wind Symphony</li>
+            </ul>
+          </article>
+          <article class="coursework-card">
+            <p class="coursework-term">Fall 2025</p>
+            <ul>
+              <li><span>QMB3302</span> Foundations of Business Analytics and AI</li>
+              <li><span>GEB2015</span> Business and You: Warrington Welcome</li>
+              <li><span>ISM3013</span> Introduction to Information Systems</li>
+              <li><span>HUM2930</span> Research and Creativity</li>
+              <li><span>ISC1010C</span> Secrets of Alchemy</li>
+              <li><span>MUN1110</span> Marching Band</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-      <!-- Left: note cards -->
-      <div class="academics-grid">
+      <section class="academic-honors" aria-labelledby="honors-title">
+        <div class="academic-section-heading">
+          <p class="academic-kicker">Current Milestones</p>
+          <h3 id="honors-title">University Honors</h3>
+        </div>
+        <div class="honors-grid">
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>University Research Scholars Program</strong><small>Fall 2025</small></span></p>
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>Honors College</strong><small>Fall 2025</small></span></p>
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>Dean's List</strong><small>Fall 2025</small></span></p>
+        </div>
+      </section>
 
-        <div class="academics-card card rotate-left card-medium">
-          <div class="washi-tape washi-blush"></div>
-          <h3 class="card-label" style="text-transform: lowercase; font-family: 'Courier Prime', monospace;">High School</h3>
-          <p class="academics-subject-label label-stem"><i class="fa-solid fa-atom"></i> STEM</p>
-          <p class="academics-subject-classes">AP Biology, AP Chemistry, AP Calculus AB, AP Calculus BC, AP Computer Science A, AP Environmental Science, AP Physics C Mechanics, AP Physics E&amp;M, AP Statistics</p>
-          <hr class="subject-divider">
-          <p class="academics-subject-label label-humanities"><i class="fa-solid fa-book-open"></i> Humanities</p>
-          <p class="academics-subject-classes">AP Human Geography, AP United States History, AP World History, ENC1101, ENC1102</p>
-          <hr class="subject-divider">
-          <p class="academics-subject-label label-business"><i class="fa-solid fa-briefcase"></i> Business &amp; Social Science</p>
-          <p class="academics-subject-classes">AP Macroeconomics, AP Microeconomics, AP Psychology, PSY2041</p>
+      <section class="academic-highlights" aria-labelledby="high-school-title">
+        <div class="academic-photo-pair">
+          <figure class="academic-photo-card">
+            <button type="button" onclick="openLightbox(this.querySelector('img'))" aria-label="View graduation regalia photo">
+              <img src="images/valedictorian.jpg" alt="Vivienne wearing her graduation regalia">
+            </button>
+            <figcaption>Graduation Regalia</figcaption>
+          </figure>
+          <figure class="academic-photo-card academic-photo-card-offset">
+            <button type="button" onclick="openLightbox(this.querySelector('img'))" aria-label="View valedictorian speech photo">
+              <img src="images/val speech.png" alt="Vivienne delivering her valedictorian speech">
+            </button>
+            <figcaption>Valedictorian Speech</figcaption>
+          </figure>
         </div>
 
-      </div>
-
-      <!-- Right: polaroids + freshman year side by side -->
-      <div class="academics-right">
-
-        <div class="academics-top-row">
-
-          <!-- Photos column: polaroids + postcard stacked -->
-          <div class="academics-photos-col">
-            <div class="polaroid-cluster">
-              <div class="polaroid">
-                <img src="images/valedictorian.jpg" alt="Valedictorian" onclick="openLightbox(this)">
-                <p class="polaroid-caption">Graduation Regalia</p>
-              </div>
-              <div class="polaroid">
-                <img src="images/val speech.png" alt="Valedictorian Speech" onclick="openLightbox(this)">
-                <p class="polaroid-caption">Valedictorian speech to over 5000+ attendees</p>
-              </div>
-            </div>
-            <div class="postcard card" style="text-align: center;">
-              <p class="card-text">Valedictorian, Sickles High School Class of 2025 | 7.68 Weighted GPA | 4.0 Unweighted GPA</p>
-            </div>
+        <article class="high-school-summary">
+          <p class="academic-kicker">Where It Started</p>
+          <h3 id="high-school-title">Sickles High School</h3>
+          <p class="high-school-lead">Valedictorian, Class of 2025</p>
+          <div class="high-school-stats">
+            <p><strong>7.68</strong><span>Weighted GPA</span></p>
+            <p><strong>4.0</strong><span>Unweighted GPA</span></p>
+            <p><strong>5,000+</strong><span>Speech Attendees</span></p>
           </div>
-
-          <!-- GPA & Honors card + flowers -->
-          <div class="gpa-col">
-            <div class="academics-card card rotate-left card-navy card-wide">
-              <div class="washi-tape washi-gold"></div>
-              <h3 class="card-label" style="font-family: 'Courier Prime', monospace; text-transform: lowercase;">GPA &amp; Honors</h3>
-              <ul class="academics-list">
-                <li>✦ University Research Scholars Program (URSP) — Fall 2025</li>
-                <li>♖ Honors College — Fall 2025</li>
-                <li>★ Dean's List — Fall 2025</li>
-                <li>♛ Valedictorian — May 2025</li>
-                <li>♔ President's Cup — April 2025</li>
-                <li>♪ Hillsborough All County Honor Band / Orchestra — 2020–2025</li>
-                <li>♪ Florida All State Symphonic Band — January 2025</li>
-                <li>♪ USF Festival of Winds Honor Band — December 2024</li>
-                <li>♪ National Band and Orchestra Festival — March 2024</li>
-              </ul>
-              <a href="cv.html" class="card-more-link">⟡ more on my cv ⟶</a>
-            </div>
-            <img src="images/redesign 1/academic flowers.png" class="academic-flowers-img" alt="">
+          <div class="high-school-subjects">
+            <p><strong>STEM</strong> Biology, Chemistry, Calculus, Computer Science, Environmental Science, Physics, and Statistics</p>
+            <p><strong>Humanities</strong> Human Geography, U.S. History, World History, and Composition</p>
+            <p><strong>Business &amp; Social Science</strong> Macroeconomics, Microeconomics, and Psychology</p>
           </div>
+        </article>
+      </section>
 
+      <section class="academic-honors" aria-labelledby="high-school-honors-title">
+        <div class="academic-section-heading">
+          <p class="academic-kicker">Earlier Milestones</p>
+          <h3 id="high-school-honors-title">High School Honors</h3>
         </div>
-
-      </div>
-
-    </div>
-
-    <!-- ======= UF COURSEWORK TIMELINE ======= -->
-    <div class="uf-timeline">
-      <h3 class="timeline-title"><span class="timeline-title-box">uf coursework timeline</span></h3>
-
-      <div class="timeline-outer-card card">
-      <div class="timeline-years-grid">
-
-        <!-- Freshman Year -->
-        <div class="timeline-year-block timeline-freshman">
-          <h4 class="timeline-year-heading">freshman year</h4>
-          <div class="timeline-semesters">
-            <div class="timeline-sem">
-              <p class="timeline-sem-name">fall 2025</p>
-              <ul class="timeline-list">
-                <li>Foundations of Business Analytics and AI — QMB3302</li>
-                <li>Business and You: Warrington Welcome — GEB2015</li>
-                <li>Introduction to Information Systems — ISM3013</li>
-                <li>Research and Creativity — HUM2930</li>
-                <li>Secrets of Alchemy — ISC1010C</li>
-                <li>Marching Band — MUN1110</li>
-              </ul>
-            </div>
-            <div class="timeline-sem">
-              <p class="timeline-sem-name">spring 2026</p>
-              <ul class="timeline-list">
-                <li>Intro to Financial Accounting — ACG2021</li>
-                <li>Statistics for Business Decisions — QMB3250</li>
-                <li>Global Ethics in Business — BUL4443</li>
-                <li>Siri is My Superpower: Communicating with AI — COM2382</li>
-                <li>Sales Seminar — MAR2401</li>
-                <li>Wind Symphony — MUN1140</li>
-              </ul>
-            </div>
-            <div class="timeline-sem">
-              <p class="timeline-sem-name">summer 2026</p>
-              <ul class="timeline-list">
-                <li>Managerial Accounting — ACG2071</li>
-              </ul>
-            </div>
-          </div>
+        <div class="honors-grid">
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>Valedictorian</strong><small>May 2025</small></span></p>
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>President's Cup</strong><small>April 2025</small></span></p>
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>Hillsborough All County Honor Band / Orchestra</strong><small>2020–2025</small></span></p>
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>Florida All State Symphonic Band</strong><small>January 2025</small></span></p>
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>USF Festival of Winds Honor Band</strong><small>December 2024</small></span></p>
+          <p><i class="fa-solid fa-award" aria-hidden="true"></i><span><strong>National Band and Orchestra Festival</strong><small>March 2024</small></span></p>
         </div>
-
-        <!-- Sophomore Year -->
-        <div class="timeline-year-block">
-          <h4 class="timeline-year-heading">sophomore year</h4>
-          <div class="timeline-semesters">
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">fall 2026</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">spring 2027</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">summer 2027</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Junior Year -->
-        <div class="timeline-year-block">
-          <h4 class="timeline-year-heading">junior year</h4>
-          <div class="timeline-semesters">
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">fall 2027</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">spring 2028</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">summer 2028</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Senior Year -->
-        <div class="timeline-year-block">
-          <h4 class="timeline-year-heading">senior year</h4>
-          <div class="timeline-semesters">
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">fall 2028</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">spring 2029</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-            <div class="timeline-sem timeline-placeholder">
-              <p class="timeline-sem-name">summer 2029</p>
-              <div class="placeholder-lines">
-                <span></span><span></span><span></span><span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      </div>
+        <a href="cv.html" class="academic-cv-link">View More on My CV <span aria-hidden="true">↗</span></a>
+      </section>
     </div>
 
   </main>
@@ -250,28 +174,20 @@
   </script>
   <script src="scripts.js"></script>
 
-  <!-- ======= FOOTER ======= -->
-  <footer class="footer" id="contact">
-    <img src="images/redesign 1/footer background.png?v=2" class="footer-bg-img" alt="">
-    <div class="footer-tape"></div>
-    <div class="footer-inner">
-      <p class="footer-name">Vivienne McGaha</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/viv2612" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:vmcgaha@ufl.edu" class="social-link" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+  <footer class="marketing-footer" id="contact">
+    <div class="marketing-footer-inner">
+      <a class="marketing-footer-name" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
+      <div class="marketing-footer-connect">
+        <p>Let's connect</p>
+        <div class="marketing-footer-links" aria-label="Social and contact links">
+          <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="mailto:vmcgaha@ufl.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/viv2612" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <p class="footer-updated">last updated May 2026</p>
     </div>
+    <p class="marketing-footer-note">Marketing, storytelling, and creative work from Gainesville, Florida.</p>
   </footer>
 
 </body>

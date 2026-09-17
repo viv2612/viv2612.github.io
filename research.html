@@ -11,23 +11,23 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body class="research-page">
+<body class="research-page unified-page">
 
   <!-- Signature -->
   <div class="page-sig"><img src="images/redesign 1/signature paper tare.png" alt="vqm"><img src="images/redesign 1/leaves.png" class="page-sig-leaves" alt=""></div>
 
   <!-- ======= NAVIGATION ======= -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a class="marketing-home-brand" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="academics.html">Academics</a></li>
       <li><a href="journal.html">Journal</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -35,46 +35,54 @@
   <!-- ======= RESEARCH CONTENT ======= -->
   <main class="page-main">
 
-    <div class="section-header">
+    <div class="section-header reveal-fall">
       <div class="section-tape"></div>
       <h2 class="section-title">Research</h2>
-      <p class="research-subtitle">projects, questions, and findings i am exploring</p>
+      <p class="research-subtitle">Projects, Questions, and Findings I Am Exploring</p>
     </div>
 
-    <div class="research-layout">
-
-      <!-- Research card -->
-      <div class="research-card card">
-        <div class="washi-tape washi-tan"></div>
-        <div class="push-pin pin-small pin-coffee"></div>
-        <h3 class="card-label">Home Spillover Effect on Work Effectiveness and Efficiency</h3>
-        <span class="research-status">In Progress</span>
-        <p class="research-date">November 2025 – Present</p>
-        <p class="card-text">Analyzing how positive and negative experiences at home impact an individual's work performance</p>
-        <ul class="research-responsibilities">
-          <li>Conduct literature searches, reviews, and summaries to support ongoing research projects and identify relevant theoretical frameworks</li>
-          <li>Design, create, and edit Qualtrics surveys to collect data aligned with research objectives</li>
-          <li>Built and optimized Excel-based code to streamline analysis of large datasets (200+ columns), reducing manual sorting time and enhancing data insights</li>
-        </ul>
-        <div class="research-skills">
-          <span class="skill-tag">Search Engine Optimization</span>
-          <span class="skill-tag">Data Scraping</span>
-          <span class="skill-tag">Attention to Detail</span>
+    <div class="research-showcase">
+      <section class="research-feature" aria-labelledby="current-research-title">
+        <div class="research-feature-main">
+          <p class="research-kicker">Current Research</p>
+          <h3 id="current-research-title">Home Spillover Effects on Work Effectiveness and Efficiency</h3>
+          <div class="research-project-meta">
+            <span class="research-status">In Progress</span>
+            <span class="research-date">November 2025 – Present</span>
+          </div>
+          <p class="research-summary">Exploring how positive and negative experiences at home influence an individual's effectiveness, efficiency, and overall performance at work.</p>
         </div>
-      </div>
 
-      <!-- Polaroid + caption -->
-      <div class="research-right">
-        <div class="research-photo">
-          <div class="push-pin pin-small pin-slate"></div>
-          <img src="images/ursp poster presentation.jpg" alt="URSP Poster Presentation" onclick="openLightbox(this)">
-          <p class="polaroid-caption">URSP Poster Presentation</p>
+        <div class="research-feature-details">
+          <h4>What I’m Working On</h4>
+          <ul class="research-responsibilities">
+            <li>Conducting literature searches, reviews, and summaries to identify relevant theoretical frameworks.</li>
+            <li>Designing and editing Qualtrics surveys aligned with the project’s research objectives.</li>
+            <li>Building Excel-based processes for datasets with 200+ columns to reduce manual sorting and improve analysis.</li>
+          </ul>
+          <div class="research-skills" aria-label="Current research skills">
+            <span class="skill-tag">Literature Review</span>
+            <span class="skill-tag">Survey Design</span>
+            <span class="skill-tag">Qualtrics</span>
+            <span class="skill-tag">Excel Analysis</span>
+          </div>
         </div>
-        <div class="research-postcard card">
+      </section>
+
+      <section class="research-poster-feature" aria-labelledby="poster-research-title">
+        <figure class="research-photo">
           <div class="washi-tape washi-caput"></div>
-          <p class="card-text">This is the poster I presented with 4 peers at the Fall Research and Creativity Poster Symposium. We discuss the possibility of introducing wind or solar power to UF campus to make a greener campus, and which renewable energy source would be most effective for UF.</p>
+          <img src="images/ursp poster presentation.jpg" alt="Vivienne and her peers presenting their renewable energy research poster" onclick="openLightbox(this)">
+          <figcaption>Fall Research and Creativity Poster Symposium</figcaption>
+        </figure>
+
+        <div class="research-poster-copy">
+          <p class="research-kicker">Poster Presentation</p>
+          <h3 id="poster-research-title">Renewable Energy at the University of Florida</h3>
+          <p class="research-poster-lead">Presented with four peers through the University Research Scholars Program.</p>
+          <p>Our team explored whether wind or solar power could help create a greener UF campus. We compared both renewable-energy options to determine which would be the most practical and effective fit for the university.</p>
         </div>
-      </div>
+      </section>
 
     </div>
 
@@ -96,28 +104,20 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
   </script>
 
-  <!-- ======= FOOTER ======= -->
-  <footer class="footer" id="contact">
-    <img src="images/redesign 1/footer background.png?v=2" class="footer-bg-img" alt="">
-    <div class="footer-tape"></div>
-    <div class="footer-inner">
-      <p class="footer-name">Vivienne McGaha</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/viv2612" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:vmcgaha@ufl.edu" class="social-link" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+  <footer class="marketing-footer" id="contact">
+    <div class="marketing-footer-inner">
+      <a class="marketing-footer-name" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
+      <div class="marketing-footer-connect">
+        <p>Let's connect</p>
+        <div class="marketing-footer-links" aria-label="Social and contact links">
+          <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="mailto:vmcgaha@ufl.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/viv2612" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <p class="footer-updated">last updated May 2026</p>
     </div>
+    <p class="marketing-footer-note">Marketing, storytelling, and creative work from Gainesville, Florida.</p>
   </footer>
 
   <script src="scripts.js"></script>

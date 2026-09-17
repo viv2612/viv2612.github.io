@@ -3,358 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vivienne McGaha</title>
+  <title>Marketing Portfolio — Vivienne McGaha</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Pinyon+Script&family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body>
+<body class="marketing-home-page">
 
-  <!-- ======= LOADER ======= -->
-  <div id="loader">
-    <svg class="ldr-svg" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-      <!-- Background scattered ✦ stars — varied sizes & colors, outside the central star region -->
-      <!-- Small ✦ -->
-      <text class="ldr-bg ldr-b1"  x="18"  y="22"  font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#D29B27">✦</text>
-      <text class="ldr-bg ldr-b2"  x="72"  y="48"  font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#6D8BA7">✦</text>
-      <text class="ldr-bg ldr-b3"  x="340" y="32"  font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#F5EFE6">✦</text>
-      <text class="ldr-bg ldr-b4"  x="385" y="95"  font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#682D2D">✦</text>
-      <text class="ldr-bg ldr-b5"  x="15"  y="185" font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#4A3628">✦</text>
-      <text class="ldr-bg ldr-b6"  x="55"  y="250" font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#D29B27">✦</text>
-      <text class="ldr-bg ldr-b7"  x="375" y="210" font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#6D8BA7">✦</text>
-      <text class="ldr-bg ldr-b8"  x="355" y="262" font-size="4"  text-anchor="middle" dominant-baseline="central" fill="#F5EFE6">✦</text>
-      <!-- Medium ✦ -->
-      <text class="ldr-bg ldr-b9"  x="88"  y="18"  font-size="8"  text-anchor="middle" dominant-baseline="central" fill="#6D8BA7">✦</text>
-      <text class="ldr-bg ldr-b10" x="305" y="22"  font-size="8"  text-anchor="middle" dominant-baseline="central" fill="#D29B27">✦</text>
-      <text class="ldr-bg ldr-b11" x="25"  y="130" font-size="8"  text-anchor="middle" dominant-baseline="central" fill="#F5EFE6">✦</text>
-      <text class="ldr-bg ldr-b12" x="382" y="148" font-size="8"  text-anchor="middle" dominant-baseline="central" fill="#682D2D">✦</text>
-      <text class="ldr-bg ldr-b13" x="130" y="268" font-size="8"  text-anchor="middle" dominant-baseline="central" fill="#4A3628">✦</text>
-      <text class="ldr-bg ldr-b14" x="270" y="265" font-size="8"  text-anchor="middle" dominant-baseline="central" fill="#6D8BA7">✦</text>
-      <!-- Big ✦ -->
-      <text class="ldr-bg ldr-b15" x="50"  y="78"  font-size="14" text-anchor="middle" dominant-baseline="central" fill="#D29B27">✦</text>
-      <text class="ldr-bg ldr-b16" x="360" y="65"  font-size="14" text-anchor="middle" dominant-baseline="central" fill="#682D2D">✦</text>
-      <text class="ldr-bg ldr-b17" x="40"  y="230" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#6D8BA7">✦</text>
-      <text class="ldr-bg ldr-b18" x="368" y="235" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#F5EFE6">✦</text>
-      <!-- Star perimeter path — same shape as the favicon, drawn as a continuous stroke -->
-      <path class="ldr-star"
-        d="M200,60 L218,115 L276,115 L230,150 L247,205 L200,171 L153,205 L171,150 L124,115 L182,115 Z"
-        fill="none" stroke="#D29B27"/>
-    </svg>
-  </div>
-  <script>
-    (function() {
-      var loader = document.getElementById('loader');
-      var navType = (performance.getEntriesByType('navigation')[0] || {}).type;
-      var isReload = navType === 'reload';
-      var isFirstVisit = !sessionStorage.getItem('loaderShown');
-      if (isReload || isFirstVisit) {
-        sessionStorage.setItem('loaderShown', '1');
-        setTimeout(function() {
-          loader.style.animation = 'ldr-fade-out 0.5s ease forwards';
-          loader.addEventListener('animationend', function() { loader.style.display = 'none'; }, { once: true });
-        }, 2500);
-      } else {
-        loader.style.display = 'none';
-      }
-    })();
-  </script>
-
-  <!-- Signature + leaves overlay -->
-  <div class="page-sig">
-    <img src="images/redesign 1/signature paper tare.png" alt="vqm">
-    <img src="images/redesign 1/leaves.png" class="page-sig-leaves" alt="">
-  </div>
-
-  <!-- ======= NAVIGATION ======= -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a class="marketing-home-brand" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="academics.html">Academics</a></li>
       <li><a href="journal.html">Journal</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- ======= HERO ======= -->
-  <section class="hero" id="about">
-
-    <!-- Left panel: name + bio -->
-    <div class="hero-left">
-
-      <div class="hero-name-group">
-        <p class="hero-greeting">hi, i'm</p>
-        <h1 class="hero-name">vivienne<br>mcgaha&nbsp;<span class="hero-heart">♡</span></h1>
+  <main class="marketing-home-main">
+    <section class="marketing-section marketing-hero" id="home" aria-labelledby="marketing-portfolio-title">
+      <div class="marketing-hero-copy">
+        <p class="marketing-eyebrow"><span>Creator / Researcher / Musician</span><span class="marketing-eyebrow-line" aria-hidden="true"></span><span>Est. 2026</span></p>
+        <h1 class="marketing-title" id="marketing-portfolio-title"><span class="marketing-title-main">Marketing</span> <span class="marketing-title-script">Portfolio</span></h1>
+        <p class="marketing-description">my personal collection of creative works, research, memories, and academics</p>
+        <a class="marketing-portfolio-button" href="portfolio.html">View my portfolio</a>
       </div>
-      <p class="hero-tagline"><span class="tag-word">student</span><span class="tag-sep">&nbsp;·&nbsp;</span><span class="tag-word">musician</span><span class="tag-sep">&nbsp;·&nbsp;</span><span class="tag-word">creator</span></p>
-
-      <div class="hero-social-row">
-        <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/viv2612" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:vmcgaha@ufl.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
-      </div>
-
-      <p class="hero-desc">documenting growth, ideas, projects, and the little things that shape who i'm becoming.</p>
-
-      <span class="hero-learn-wrap"><a href="about.html" class="hero-learn-more">learn more about me ↓</a></span>
-
-    </div>
-
-    <div class="hero-koi-wrap">
-      <img src="images/redesign 1/koi fish & projects torn.png" class="hero-koi-deco" alt="">
-      <div class="hero-koi-projects-header">
-        <h2 class="hero-koi-projects-label">projects <span class="hero-koi-sparkles">✦ ✧ ✦</span></h2>
-        <img src="images/redesign 1/projects caption.png" class="hero-koi-projects-caption" alt="a collection of hackathon builds, passion projects, and experiments.">
-      </div>
-    </div>
-
-    <!-- Right panel: portrait + stickies + deco -->
-    <div class="hero-right">
-
-      <!-- Portrait (corner tag anchored to it so it always sits on the photo) -->
-      <div class="hero-portrait-wrap">
-        <img src="images/redesign 1/pixel art me with border.png" class="hero-portrait" alt="Vivienne McGaha">
-        <img src="images/redesign 1/corner of the internet.png" class="hero-corner-tag" alt="">
-      </div>
-      <div class="hero-notes-row">
-        <img src="images/redesign 1/one day.png" class="hero-one-day" alt="">
-        <div class="hero-sticky-note-wrap">
-          <img src="images/redesign 1/current sticky note.png" class="hero-sticky-note" alt="">
-          <span class="hero-sticky-label">currently</span>
-          <ul class="hero-sticky-items">
-            <li>studying for classes</li>
-            <li>building a mechanical keyboard</li>
-            <li>exploring virginia</li>
-            <li>on the search for a matt maltese vinyl</li>
-          </ul>
+      <div class="marketing-photo-cluster">
+        <img class="marketing-hero-sparkle marketing-sparkle-one" src="images/hero-single-sparkle.png" alt="">
+        <img class="marketing-hero-sparkle marketing-sparkle-two" src="images/hero-single-sparkle.png" alt="">
+        <img class="marketing-hero-sparkle marketing-sparkle-three" src="images/hero-single-sparkle.png" alt="">
+        <img class="marketing-hero-sparkle marketing-sparkle-four" src="images/hero-single-sparkle.png" alt="">
+        <img class="marketing-hero-sparkle marketing-sparkle-five" src="images/hero-single-sparkle.png" alt="">
+        <div class="marketing-image-frame">
+          <img src="images/new self image.png" alt="Vivienne">
         </div>
       </div>
+    </section>
 
-<!-- Flowers bottom-right -->
-      <img src="images/redesign 1/flowers.png" class="hero-flowers-deco" alt="">
-
-    </div>
-
-    <img src="images/redesign 1/doodles/top left sparkle.png" class="hero-doodle hero-doodle-tl-sparkle" alt="">
-    <img src="images/redesign 1/doodles/top left heart.png" class="hero-doodle hero-doodle-tl-heart" alt="">
-    <img src="images/redesign 1/doodles/top right sparkle.png" class="hero-doodle hero-doodle-tr-sparkle" alt="">
-    <img src="images/redesign 1/doodles/top right orange sparkle.png" class="hero-doodle hero-doodle-tr-orange" alt="">
-
-  </section>
-
-<!-- ======= PROJECTS ======= -->
-  <section class="projects-section" id="projects">
-    <img src="images/redesign 1/projects background edited 2.png?v=2" class="projects-bg-img" alt="">
-    <img src="images/redesign 1/doodles/projects doodle overlay edited.png" class="projects-doodle-overlay" alt="">
-    <div class="projects-grid">
-
-      <div class="project-card card rotate-left"
-           onclick="openProjectModal(this)"
-           data-title="DataFables"
-           data-desc="An award-winning interactive storytelling game for kids, built at Hacklytics Golden Byte 2026. DataFables ranked 3rd out of 1200+ participants."
-           data-detail="DataFables is an interactive storytelling platform that turns reading into a game: kids can pick from 6 genres, customize a protagonist, and make choices that change the story, while the reading experience adapts to their age range and typical Lexile level, includes pronunciation practice with instant feedback, rewards progress with XP and coins they can spend on character accessories, and supports 10 languages to make it accessible for more kids worldwide."
-           data-link-line="Link to our Devpost ➤"
-           data-link-url="https://devpost.com/software/hacklytics-2026"
-           data-img="images/datafables.png"
-           data-color="#9B7EAE">
-        <div class="push-pin pin-small"></div>
-        <div class="ribbon-clip"><div class="winner-badge">winner</div></div>
-        <div class="project-img" style="background-image: url('images/datafables.png'); background-size: cover; background-position: center;">
-        </div>
-        <div class="project-info">
-          <h4>DataFables</h4>
-          <p>An award-winning interactive storytelling game for kids, ranked 3rd out of 1200+ participants at Hacklytics Golden Byte 2026.</p>
-          <span class="project-link">View →</span>
+    <section class="marketing-section marketing-biography" id="biography" aria-labelledby="biography-title">
+      <div class="marketing-biography-content">
+        <h2 class="marketing-section-title reveal-fall" id="biography-title">Biography <span class="biography-title-wave" aria-hidden="true">～～～～～～～～～～～～～～～～</span></h2>
+        <div class="marketing-biography-body">
+          <div class="marketing-biography-photo-cluster">
+            <img class="marketing-biography-sparkle marketing-biography-sparkle-one" src="images/hero-single-sparkle.png" alt="">
+            <img class="marketing-biography-sparkle marketing-biography-sparkle-two" src="images/hero-single-sparkle.png" alt="">
+            <img class="marketing-biography-sparkle marketing-biography-sparkle-three" src="images/hero-single-sparkle.png" alt="">
+            <img class="marketing-biography-sparkle marketing-biography-sparkle-four" src="images/hero-single-sparkle.png" alt="">
+            <figure class="marketing-biography-image reveal-fall">
+              <img src="images/biography image.png" alt="Vivienne smiling while seated outdoors">
+            </figure>
+          </div>
+          <div class="marketing-biography-copy">
+            <p>Hi! My name is Vivienne, and I am a second-year marketing major at the University of Florida. I freelance college application reviews and serve as a social media manager for three organizations on campus. In my free time, you can find me behind a camera, editing on Canva, hanging out with friends, thrifting at local shops, and trying out new foods!</p>
+            <p>Currently, I'm building my skills in Canva and Lightroom. My next goal is to complete Adobe certifications, where I will learn how to use Photoshop, Illustrator, InDesign, and Firefly. I love reviewing analytics and creating new designs to keep content fresh and trendy. I am a huge advocate for focusing on brand voice and style.</p>
+            <p>I look forward to continuing to build my career in marketing and enhancing my skill set! I am passionate about using my strengths, leadership, and creativity to make a meaningful contribution to the world around me :)</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="project-card card rotate-right"
-           onclick="openProjectModal(this)"
-           data-title="Project Two"
-           data-desc="In the works."
-           data-img=""
-           data-color="#6D8BA7">
-        <div class="push-pin pin-small pin-slate"></div>
-        <div class="project-img" style="background: #6D8BA7;"></div>
-        <div class="project-info">
-          <h4>Project Two</h4>
-          <p>In the works.</p>
-          <span class="project-link">View →</span>
+    <section class="marketing-section marketing-skills" id="skills" aria-labelledby="skills-title">
+      <h2 class="marketing-section-title reveal-fall" id="skills-title">SKILLS &amp; CERTIFICATIONS</h2>
+      <div class="marketing-skills-layout">
+        <div class="marketing-skills-grid" role="list" aria-label="Software skills">
+        <article class="marketing-skill-card" role="listitem">
+          <img src="images/canva-wordmark.svg" alt="Canva" class="marketing-skill-logo marketing-skill-logo-wordmark">
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <img src="images/slack-wordmark.svg" alt="Slack" class="marketing-skill-logo marketing-skill-logo-wordmark">
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Microsoft_Office_2019_-_2024_logo.svg" alt="Microsoft Office" class="marketing-skill-logo marketing-skill-logo-wordmark">
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Adobe_Photoshop_Lightroom_CC_logo.svg" alt="Adobe Lightroom" class="marketing-skill-logo marketing-skill-logo-wordmark marketing-skill-logo-square">
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <img src="https://en.wikipedia.org/wiki/Special:Redirect/file/Mailchimp_logo.svg" alt="Mailchimp" class="marketing-skill-logo marketing-skill-logo-wordmark">
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Google_Workspace_Logo.svg" alt="Google Workspace" class="marketing-skill-logo marketing-skill-logo-wordmark">
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <div class="marketing-skill-lockup" aria-label="Meta Business Suite">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Meta_Platforms_Inc._logo.svg" alt="" class="marketing-skill-logo marketing-skill-logo-wordmark">
+            <span>Business Suite</span>
+          </div>
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/CapCut_logo.svg" alt="CapCut" class="marketing-skill-logo marketing-skill-logo-wordmark">
+        </article>
+        <article class="marketing-skill-card" role="listitem">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Instagram_logo_2022.svg" alt="Instagram" class="marketing-skill-logo marketing-skill-logo-wordmark marketing-skill-logo-square">
+        </article>
+        </div>
+        <div class="marketing-certifications-grid" role="list" aria-label="Certifications">
+        <article class="marketing-certification" role="listitem">
+          <svg class="marketing-certification-ribbon marketing-certification-ribbon-dreamweaver" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="6"></circle>
+            <path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+            <path class="marketing-certification-star" d="m12 5.1.86 1.74 1.92.28-1.39 1.35.33 1.91L12 9.48l-1.72.9.33-1.91-1.39-1.35 1.92-.28L12 5.1Z"></path>
+          </svg>
+          <h3>Adobe Dreamweaver</h3>
+        </article>
+        <article class="marketing-certification" role="listitem">
+          <svg class="marketing-certification-ribbon marketing-certification-ribbon-excel" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="6"></circle>
+            <path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+            <path class="marketing-certification-star" d="m12 5.1.86 1.74 1.92.28-1.39 1.35.33 1.91L12 9.48l-1.72.9.33-1.91-1.39-1.35 1.92-.28L12 5.1Z"></path>
+          </svg>
+          <h3>Microsoft Excel</h3>
+        </article>
+        <article class="marketing-certification" role="listitem">
+          <svg class="marketing-certification-ribbon marketing-certification-ribbon-html" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="6"></circle>
+            <path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"></path>
+            <circle cx="12" cy="8" r="4"></circle>
+            <path class="marketing-certification-star" d="m12 5.1.86 1.74 1.92.28-1.39 1.35.33 1.91L12 9.48l-1.72.9.33-1.91-1.39-1.35 1.92-.28L12 5.1Z"></path>
+          </svg>
+          <h3>Programming in HTML and CSS</h3>
+        </article>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="project-card card rotate-left-sm"
-           onclick="openProjectModal(this)"
-           data-title="Project Three"
-           data-desc="In the works."
-           data-img=""
-           data-color="#A9B18A">
-        <div class="push-pin pin-small pin-coffee"></div>
-        <div class="project-img" style="background: #A9B18A;"></div>
-        <div class="project-info">
-          <h4>Project Three</h4>
-          <p>In the works.</p>
-          <span class="project-link">View →</span>
+  <footer class="marketing-footer" id="contact">
+    <div class="marketing-footer-inner">
+      <a class="marketing-footer-name" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
+      <div class="marketing-footer-connect">
+        <p>Let's connect</p>
+        <div class="marketing-footer-links" aria-label="Social and contact links">
+          <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="mailto:vmcgaha@ufl.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/viv2612" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-
-      <div class="project-card card rotate-right-sm"
-           onclick="openProjectModal(this)"
-           data-title="Project Four"
-           data-desc="In the works."
-           data-img=""
-           data-color="#D29B27">
-        <div class="push-pin pin-small pin-caput"></div>
-        <div class="project-img" style="background: #D29B27;"></div>
-        <div class="project-info">
-          <h4>Project Four</h4>
-          <p>In the works.</p>
-          <span class="project-link">View →</span>
-        </div>
-      </div>
-
     </div>
-
-    <div class="projects-heart-wrap">
-      <img src="images/redesign 1/doodles/beating heart doodle.png" class="projects-heart-doodle" alt="">
-    </div>
-
-    <div class="wisdom-title-row">
-      <h2 class="wisdom-title-overlap">bytes of wisdom</h2>
-      <img src="images/redesign 1/bytes of wisdom/orange sparkle.png" class="wisdom-title-sparkle" alt="">
-    </div>
-
-  </section>
-
-  <!-- ======= BYTES OF WISDOM ======= -->
-  <section class="wisdom-section" id="wisdom">
-    <img src="images/redesign 1/bytes of wisdom background 2.png" class="wisdom-bg-img" alt="">
-    <img src="images/redesign 1/camera sticker.png" class="wisdom-sticker wisdom-sticker-left" alt="">
-    <img src="images/redesign 1/stargazer lily sticker.png" class="wisdom-sticker wisdom-sticker-right" alt="">
-    <img src="images/redesign 1/bytes of wisdom/blue heart.png" class="wisdom-doodle wisdom-doodle-blue-heart" alt="">
-    <img src="images/redesign 1/bytes of wisdom/blue sparkle.png" class="wisdom-doodle wisdom-doodle-blue-sparkle" alt="">
-    <img src="images/redesign 1/bytes of wisdom/orange & blue sparkle.png" class="wisdom-doodle wisdom-doodle-ob-sparkle" alt="">
-    <img src="images/redesign 1/bytes of wisdom/orange sparkle.png" class="wisdom-doodle wisdom-doodle-orange-sparkle-left" alt="">
-    <img src="images/redesign 1/bytes of wisdom/blue sparkle.png" class="wisdom-doodle wisdom-doodle-blue-sparkle-left" alt="">
-    <img src="images/redesign 1/bytes of wisdom/blue sparkle.png" class="wisdom-doodle wisdom-doodle-blue-sparkle-above-cam" alt="">
-    <img src="images/redesign 1/bytes of wisdom/orange sparkle.png" class="wisdom-doodle wisdom-doodle-orange-sparkle" alt="">
-    <img src="images/redesign 1/bytes of wisdom/orange sparkle.png" class="wisdom-doodle wisdom-doodle-orange-sparkle-lily" alt="">
-    <img src="images/redesign 1/bytes of wisdom/orange & blue sparkle.png" class="wisdom-doodle wisdom-doodle-ob-sparkle-lily" alt="">
-    <img src="images/redesign 1/laptop code sticker.png" class="wisdom-doodle wisdom-doodle-laptop" alt="">
-    <img src="images/redesign 1/bytes of wisdom/orange emphasis.png" class="wisdom-doodle wisdom-doodle-orange-emphasis" alt="">
-    <img src="images/redesign 1/bytes of wisdom/orange emphasis.png" class="wisdom-doodle wisdom-doodle-orange-emphasis-cam" alt="">
-    <img src="images/redesign 1/bytes of wisdom/blue heart.png" class="wisdom-doodle wisdom-doodle-blue-heart-right" alt="">
-    <div class="wisdom-content">
-    <p class="wisdom-intro">small notes, mottos, and reminders i'm collecting along the way.</p>
-
-    <div class="wisdom-grid">
-
-      <img src="images/redesign 1/bytes of wisdom/own lane motto.png?v=2" class="wisdom-img-card rotate-right" alt="motto: Own lane, Own race, Own pace">
-      <img src="images/redesign 1/bytes of wisdom/change motto.png?v=2" class="wisdom-img-card rotate-left" alt="motto: Everything you aren't changing, you are choosing">
-      <img src="images/redesign 1/bytes of wisdom/productive women motto.png?v=2" class="wisdom-img-card rotate-left-sm" alt="motto: Productive women don't wait for change">
-      <img src="images/redesign 1/bytes of wisdom/sound signal concept.png?v=2" class="wisdom-img-card rotate-right-sm" alt="concept: Sound vs Signal">
-      <img src="images/redesign 1/bytes of wisdom/journaling habit.png?v=2" class="wisdom-img-card rotate-left" alt="habit: Journaling">
-      <img src="images/redesign 1/bytes of wisdom/ted talk habits.png?v=2" class="wisdom-img-card rotate-right" alt="habit: Ted Talks">
-
-    </div>
-    </div>
-  </section>
-
-  <!-- ======= FOOTER / CONTACT ======= -->
-  <footer class="footer" id="contact">
-    <img src="images/redesign 1/footer background.png?v=2" class="footer-bg-img" alt="">
-    <div class="footer-tape"></div>
-    <div class="footer-inner">
-      <p class="footer-name">Vivienne McGaha</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/viv2612" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:vmcgaha@ufl.edu" class="social-link" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-      <p class="footer-updated">last updated May 2026</p>
-    </div>
+    <p class="marketing-footer-note">Marketing, storytelling, and creative work from Gainesville, Florida.</p>
   </footer>
 
-  <!-- Project Modal -->
-  <div class="project-modal-overlay" id="projectModal" onclick="closeProjectModal(event)">
-    <div class="project-modal-box">
-      <button class="modal-close" onclick="closeProjectModal()">&times;</button>
-      <div class="modal-img" id="modalImg"></div>
-      <div class="modal-body">
-        <h3 id="modalTitle"></h3>
-        <p id="modalDesc"></p>
-        <p id="modalDetail" class="modal-detail"></p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    function openProjectModal(card) {
-      document.getElementById('modalTitle').textContent = card.dataset.title;
-      document.getElementById('modalDesc').textContent = card.dataset.desc;
-      const detail = document.getElementById('modalDetail');
-      detail.textContent = card.dataset.detail || '';
-      detail.style.display = card.dataset.detail ? 'block' : 'none';
-      const existingLine = detail.querySelector('.modal-link-line');
-      if (existingLine) existingLine.remove();
-      if (card.dataset.linkLine && card.dataset.linkUrl) {
-        const p = document.createElement('p');
-        p.className = 'modal-link-line';
-        p.appendChild(document.createTextNode(card.dataset.linkLine + ' '));
-        const a = document.createElement('a');
-        a.href = card.dataset.linkUrl;
-        a.textContent = card.dataset.linkUrl;
-        a.target = '_blank';
-        a.rel = 'noopener';
-        p.appendChild(a);
-        detail.appendChild(p);
-      }
-      const imgEl = document.getElementById('modalImg');
-      if (card.dataset.img) {
-        imgEl.style.backgroundImage = `url('${card.dataset.img}')`;
-        imgEl.style.backgroundSize = 'cover';
-        imgEl.style.backgroundPosition = 'center';
-      } else {
-        imgEl.style.backgroundImage = 'none';
-        imgEl.style.background = card.dataset.color || 'var(--slate-gray)';
-      }
-      document.getElementById('projectModal').classList.add('active');
-    }
-    function closeProjectModal(e) {
-      if (!e || e.target === document.getElementById('projectModal') || e.currentTarget.classList.contains('modal-close')) {
-        document.getElementById('projectModal').classList.remove('active');
-      }
-    }
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') document.getElementById('projectModal').classList.remove('active'); });
-  </script>
-
   <script src="scripts.js"></script>
-  <script>
-    document.querySelectorAll('.project-card[data-color]').forEach(card => {
-      const hex = card.dataset.color;
-      const r = parseInt(hex.slice(1,3),16);
-      const g = parseInt(hex.slice(3,5),16);
-      const b = parseInt(hex.slice(5,7),16);
-      card.style.setProperty('--tape-color', `rgb(${r},${g},${b})`);
-    });
-  </script>
 </body>
 </html>

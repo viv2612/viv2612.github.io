@@ -11,23 +11,23 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
-<body class="journal-page">
+<body class="journal-page unified-page">
 
   <!-- Signature -->
   <div class="page-sig"><img src="images/redesign 1/signature paper tare.png" alt="vqm"><img src="images/redesign 1/leaves.png" class="page-sig-leaves" alt=""></div>
 
   <!-- ======= NAVIGATION ======= -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Primary navigation">
+    <a class="marketing-home-brand" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="academics.html">Academics</a></li>
       <li><a href="journal.html">Journal</a></li>
       <li><a href="research.html">Research</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -35,10 +35,10 @@
   <!-- ======= JOURNAL CONTENT ======= -->
   <main class="page-main">
 
-    <div class="section-header">
+    <div class="section-header reveal-fall">
       <div class="section-tape"></div>
       <h2 class="section-title">Journal</h2>
-      <p class="journal-subtitle">thoughts, reflections, and little lessons from each season</p>
+      <p class="journal-subtitle">Thoughts, Reflections, and Little Lessons from Each Season</p>
     </div>
 
     <div class="journal-layout">
@@ -56,14 +56,13 @@
             <span class="journal-tag">reflection</span>
           </div>
           <div class="journal-preview">
-            <p class="card-text">My first semester in college! This semester came with a lot of responsibility that I didn't quite know how to manage at first. Finding a routine, and learning not to say yes to everything, was something I had to figure out the hard way.</p>
+            <p class="card-text">My first semester in college! This semester definitely rocked my world at first, but over time I learned to acclimatize. Finding a routine and learning how to say no to things was something I figured out the hard way.</p>
           </div>
           <div class="journal-full" id="fall2025-full" style="display:none;">
-            <p class="card-text">I also struggled a lot with comparison this semester and realized I had a pretty unhealthy relationship with what "success" actually meant. Starting as early as elementary school, so many things were framed as competitions with clear winners: science fair, Battle of the Books, and so on. You learned to measure how well you did by how much you outperformed someone else.</p>
-            <p class="card-text">Although I'm still a competitive person (as you can definitely tell from my CliftonStrengths), I started to redefine success for myself. Instead of measuring it against the skill sets of the people around me, I began valuing it based on how much I personally improved. There will always be someone who forms connections more easily than me, someone smarter, someone more fit, someone with better emotional poise, etc. That realization led to a motto that really stuck with me this semester: "Own lane, own race, own pace."</p>
-            <p class="card-text">I'm on my own journey, and everyone else is on theirs. My success shouldn't be defined by what they're doing because ultimately, that doesn't determine my future.</p>
-            <p class="card-text">Unrelated to all of that, I would highly recommend that every college freshman take a lighter course load their first semester! Spend time exploring campus and getting involved in different clubs rather than burying yourself in a textbook. I think we sometimes forget how much of a privilege it is to experience moments that we'll later look back on so fondly and wish we could relive. Yes, you're going to college for a degree, but you're also going for the people and the network.</p>
-            <p class="card-text">Don't get too tied down to the version of yourself on paper — the resume will build with time ♡</p>
+            <p class="card-text">As usual, I struggled with comparing myself to others and feeling proud of my achievements. Starting as early as elementary school, so many things were framed as competitions with clear winners: science fair, Battle of the Books, and so on. I learned to measure my own capabilities and success by how much I outperformed or underperformed someone else.</p>
+            <p class="card-text">Although I'm still a competitive person (as you can definitely tell from my CliftonStrengths), I am learning to redefine success for myself! A quote I discovered that really hit me was: “own lane, own race, own pace.” There will always be someone smarter, stronger, and more charismatic than me, but each of us are on our own unique journey.</p>
+            <p class="card-text">Unrelated to all of that, I would highly recommend that every college freshman take a light course load their first fall semester! Spend time getting involved on campus and expanding your network. I think we, myself included, sometimes forget how much of a privilege it is to experience moments that we will later look back on so fondly and wish we could relive. Yes, you’re going to college for a degree, but you’re also going for the community and connections.</p>
+            <p class="card-text">Do not get too tied down to the version of yourself on paper; your resume will build with time!!</p>
           </div>
           <button class="journal-toggle-btn" onclick="toggleEntry('fall2025-full', this)">read full reflection ⟶</button>
         </div>
@@ -110,8 +109,8 @@
           <ul class="journal-index-list">
             <li>☐ visit lake wauburg</li>
             <li>☐ go to an away game</li>
-            <li>☐ join a committee in FLA</li>
             <li>☐ spend more time doing research</li>
+            <li>☐ fall 2026 internship</li>
           </ul>
         </div>
 
@@ -121,28 +120,20 @@
 
   </main>
 
-  <!-- ======= FOOTER ======= -->
-  <footer class="footer" id="contact">
-    <img src="images/redesign 1/footer background.png?v=2" class="footer-bg-img" alt="">
-    <div class="footer-tape"></div>
-    <div class="footer-inner">
-      <p class="footer-name">Vivienne McGaha</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/viv2612" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="mailto:vmcgaha@ufl.edu" class="social-link" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
+  <footer class="marketing-footer" id="contact">
+    <div class="marketing-footer-inner">
+      <a class="marketing-footer-name" href="index.html" aria-label="Vivienne McGaha — Home">Vivienne McGaha</a>
+      <div class="marketing-footer-connect">
+        <p>Let's connect</p>
+        <div class="marketing-footer-links" aria-label="Social and contact links">
+          <a href="https://www.linkedin.com/in/vivienne-mcgaha/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/vqiaoo/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="mailto:vmcgaha@ufl.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/viv2612" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <p class="footer-updated">last updated May 2026</p>
     </div>
+    <p class="marketing-footer-note">Marketing, storytelling, and creative work from Gainesville, Florida.</p>
   </footer>
 
   <script>

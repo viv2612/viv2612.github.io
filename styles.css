@@ -21,6 +21,730 @@
   --charcoal:     #1A1A1A;
 }
 
+
+/* ============================================================
+   UNIFIED EDITORIAL PAGES
+   Academics, Journal, Research, Gallery, and CV
+   ============================================================ */
+.unified-page {
+  background: #f7f3eb;
+  color: var(--space-cadet);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.unified-page .page-sig {
+  display: none;
+}
+
+.unified-page .navbar {
+  position: relative;
+  inset: auto;
+  min-height: 0;
+  padding: 2rem clamp(1.5rem, 4vw, 4rem) 1.25rem;
+  justify-content: space-between;
+  background:
+    linear-gradient(90deg, rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    #f7f3eb;
+  background-size: 42px 42px;
+}
+
+.unified-page .marketing-home-brand {
+  flex-shrink: 0;
+}
+
+.unified-page .nav-links,
+.unified-page .nav-toggle {
+  background-color: var(--space-cadet);
+  box-shadow: 0 2px 14px rgba(30, 45, 72, 0.38);
+}
+
+.unified-page .nav-links {
+  width: clamp(560px, 48vw, 700px);
+}
+
+.unified-page .page-main,
+.unified-page .academics-main {
+  min-height: calc(100vh - 112px);
+  padding: clamp(3rem, 5.5vw, 5.75rem) clamp(1.5rem, 7vw, 7rem) clamp(6rem, 9vw, 9rem);
+  background:
+    linear-gradient(90deg, rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    #f7f3eb;
+  background-size: 42px 42px;
+}
+
+.unified-page .section-header,
+.unified-page .page-main .section-header,
+.unified-page .academics-main .section-header,
+.unified-page.journal-page .page-main .section-header,
+.unified-page.research-page .page-main .section-header,
+.unified-page.gallery-page .page-main .section-header {
+  display: block;
+  width: auto;
+  margin: 0 0 clamp(3rem, 6vw, 5rem) !important;
+  transform: none;
+  text-align: left;
+}
+
+.unified-page .section-title,
+.unified-page .page-main .section-title,
+.unified-page .academics-main .section-title {
+  margin: 0;
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(4rem, 8vw, 7.5rem) !important;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0.025em;
+  text-transform: none !important;
+}
+
+.unified-page .academics-bio,
+.unified-page .journal-subtitle,
+.unified-page .research-subtitle,
+.unified-page .gallery-subtitle {
+  width: auto;
+  max-width: 46rem;
+  margin: 1rem 0 0;
+  color: var(--space-cadet);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1.15rem, 1.5vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+.unified-page.journal-page .page-main .section-header,
+.unified-page.research-page .page-main .section-header,
+.unified-page.gallery-page .page-main .section-header,
+.unified-page.cv-page .page-main .section-header {
+  text-align: center;
+}
+
+.unified-page.journal-page .journal-subtitle,
+.unified-page.research-page .research-subtitle,
+.unified-page.gallery-page .gallery-subtitle {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.unified-page .card,
+.unified-page .cv-doc,
+.unified-page .gallery-polaroid,
+.unified-page .research-photo {
+  background-color: rgba(250, 246, 238, 0.94);
+  border: 1px solid rgba(30, 45, 72, 0.16);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 1.75rem rgba(30, 45, 72, 0.12);
+}
+
+.unified-page .card-text,
+.unified-page .academics-subject-classes,
+.unified-page .cv-entry-date,
+.unified-page .cv-entry-org,
+.unified-page .cv-entry-meta,
+.unified-page .cv-entry-desc,
+.unified-page .gallery-caption,
+.unified-page .polaroid-date {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.unified-page .cv-doc {
+  max-width: 980px;
+  padding: clamp(2rem, 5vw, 4.5rem);
+}
+
+.unified-page .cv-doc-heading {
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  border-bottom-color: var(--tan);
+}
+
+/* Academics — editorial journey */
+.academics-page .academic-journey {
+  display: grid;
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  gap: clamp(4.5rem, 8vw, 7.5rem);
+}
+
+.academics-page .academic-kicker {
+  margin: 0 0 0.8rem;
+  color: var(--olive);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.academics-page .academic-overview {
+  display: block;
+  padding: 0;
+  color: var(--space-cadet);
+}
+
+.academics-page .academic-meta-row {
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.academics-page .academic-header-facts {
+  display: flex;
+  width: fit-content;
+  margin: 1.35rem auto 0;
+  color: var(--space-cadet);
+}
+
+.academics-page .academic-header-facts div {
+  min-width: 10rem;
+  padding-right: 1.5rem;
+}
+
+.academics-page .academic-header-facts div + div {
+  padding-right: 0;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(30, 45, 72, 0.28);
+}
+
+.academics-page .academic-header-facts dt {
+  margin-bottom: 0.2rem;
+  color: var(--olive);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.academics-page .academic-header-facts dd {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.academics-page .academic-header-facts div:first-child dd {
+  white-space: nowrap;
+}
+
+.unified-page.academics-page .academics-main .section-header {
+  position: relative;
+  top: -1.25rem;
+  text-align: center;
+}
+
+.academics-page .academics-bio {
+  position: relative;
+  top: -0.7rem;
+  width: 100%;
+  max-width: none;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.academics-page .academic-overview .academic-kicker {
+  color: var(--tan);
+}
+
+.academics-page .academic-overview h3,
+.academics-page .academic-section-heading h3,
+.academics-page .high-school-summary h3 {
+  margin: 0;
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.academics-page .academic-overview h3 {
+  max-width: 15ch;
+  font-size: clamp(2.35rem, 3.8vw, 3.8rem);
+  line-height: 1;
+}
+
+.academics-page .academic-overview-copy > p:last-child {
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+.academics-page .academic-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: fit-content;
+  margin: 0;
+  align-content: center;
+}
+
+.academics-page .academic-facts div {
+  min-width: 12rem;
+  padding: 0 2rem 0 0;
+  border-right: 1px solid rgba(30, 45, 72, 0.25);
+}
+
+.academics-page .academic-facts div + div {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+
+.academics-page .academic-facts div:last-child {
+  border-right: 0;
+}
+
+.academics-page .academic-facts dt {
+  margin-bottom: 0.35rem;
+  color: var(--olive);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.academics-page .academic-facts dd {
+  margin: 0;
+  font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.academics-page .academic-highlights {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.academics-page .academic-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.academics-page .academic-photo-card {
+  margin: 0;
+}
+
+.academics-page .academic-photo-card-offset {
+  margin-top: 3rem;
+}
+
+.academics-page .academic-photo-card button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.academics-page .academic-photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  box-shadow: 0 0.9rem 2rem rgba(30, 45, 72, 0.18);
+}
+
+.academics-page .academic-photo-card figcaption {
+  margin-top: 0.75rem;
+  color: var(--olive);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.academics-page .high-school-summary h3,
+.academics-page .academic-section-heading h3 {
+  color: var(--space-cadet);
+  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+  line-height: 1;
+}
+
+.academics-page .high-school-lead {
+  margin: 1rem 0 1.75rem;
+  color: var(--olive);
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.academics-page .high-school-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 2rem;
+  border-block: 1px solid rgba(30, 45, 72, 0.2);
+}
+
+.academics-page .high-school-stats p {
+  display: grid;
+  margin: 0;
+  padding: 1.2rem 0.75rem;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.academics-page .high-school-stats p + p {
+  border-left: 1px solid rgba(30, 45, 72, 0.2);
+}
+
+.academics-page .high-school-stats strong {
+  font-size: 1.65rem;
+}
+
+.academics-page .high-school-stats span {
+  font-size: 0.82rem;
+}
+
+.academics-page .high-school-subjects {
+  display: grid;
+  gap: 1rem;
+}
+
+.academics-page .high-school-subjects p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.academics-page .high-school-subjects strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--space-cadet);
+}
+
+.academics-page .academic-section-heading {
+  margin-bottom: 2.25rem;
+}
+
+.academics-page .academic-journey > section {
+  position: relative;
+  left: 50%;
+  width: min(calc(100% + clamp(9rem, 18vw, 18rem)), calc(100vw - 1rem), 1600px);
+  margin-inline: 0;
+  transform: translateX(-50%);
+}
+
+.academics-page .coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.academics-page .coursework-card {
+  align-self: start;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border: 1px solid rgba(30, 45, 72, 0.3);
+  border-radius: 0.8rem;
+  background: rgba(255, 253, 248, 0.98);
+  box-shadow: 0 0.85rem 2rem rgba(30, 45, 72, 0.17);
+}
+
+.academics-page .coursework-card-compact {
+  grid-column: auto;
+}
+
+.academics-page .coursework-card-current {
+  grid-column: auto;
+  border-top: 4px solid var(--tan);
+}
+
+.academics-page .coursework-term {
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--tan);
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: 1.7rem;
+}
+
+.academics-page .coursework-card ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.academics-page .coursework-card li {
+  display: grid;
+  grid-template-columns: 5.2rem 1fr;
+  gap: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.academics-page .coursework-card li span {
+  color: var(--olive);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.academics-page .honors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.academics-page .honors-grid > p {
+  display: flex;
+  min-height: 112px;
+  margin: 0;
+  padding: 1.25rem;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(30, 45, 72, 0.3);
+  border-radius: 0.7rem;
+  background: rgba(255, 253, 248, 0.98);
+  box-shadow: 0 0.7rem 1.65rem rgba(30, 45, 72, 0.14);
+}
+
+.academics-page .honors-grid i {
+  flex: 0 0 auto;
+  color: var(--tan);
+  font-size: 1.65rem;
+}
+
+.academics-page .honors-grid span,
+.academics-page .honors-grid strong,
+.academics-page .honors-grid small {
+  display: block;
+}
+
+.academics-page .honors-grid strong {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.academics-page .honors-grid small {
+  margin-top: 0.3rem;
+  color: var(--olive);
+  font-size: 0.85rem;
+}
+
+.academics-page .academic-cv-link {
+  display: inline-flex;
+  margin-top: 1.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--space-cadet);
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.academics-page .academic-cv-link:hover,
+.academics-page .academic-cv-link:focus-visible {
+  background: var(--space-cadet);
+  color: var(--off-white);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1050px) {
+  .academics-page .academic-journey > section {
+    left: auto;
+    width: 100%;
+    margin-inline: auto;
+    transform: none;
+  }
+
+  .academics-page .coursework-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .academics-page .academic-journey {
+    gap: 4rem;
+  }
+
+  .academics-page .academic-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .academics-page .honors-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .academics-page .academics-bio {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .academics-page .academic-overview {
+    padding: 0;
+  }
+
+  .academics-page .academic-facts,
+  .academics-page .coursework-grid,
+  .academics-page .honors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academics-page .academic-header-facts {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .academics-page .academic-header-facts div,
+  .academics-page .academic-header-facts div + div {
+    min-width: 0;
+    padding: 0;
+    border-left: 0;
+  }
+
+  .academics-page .academic-facts div {
+    min-width: 0;
+    padding: 0.8rem 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(30, 45, 72, 0.2);
+  }
+
+  .academics-page .academic-facts div + div {
+    padding-left: 0;
+  }
+
+  .academics-page .academic-facts div:last-child {
+    border-bottom: 0;
+  }
+
+  .academics-page .academic-photo-pair {
+    gap: 0.75rem;
+  }
+
+  .academics-page .academic-photo-card-offset {
+    margin-top: 1.5rem;
+  }
+
+  .academics-page .high-school-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .academics-page .high-school-stats p + p {
+    border-top: 1px solid rgba(30, 45, 72, 0.2);
+    border-left: 0;
+  }
+
+  .academics-page .coursework-card-compact {
+    grid-column: auto;
+  }
+
+  .academics-page .coursework-card-current {
+    grid-column: auto;
+  }
+
+  .academics-page .coursework-card li {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+.unified-page .cv-entry-title,
+.unified-page .card-label,
+.unified-page .journal-season,
+.unified-page .journal-future-season {
+  color: var(--space-cadet);
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+.unified-page .footer {
+  margin: 0;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 7vw, 7rem);
+  background: var(--space-cadet);
+  overflow: visible;
+}
+
+.unified-page .footer-bg-img,
+.unified-page .footer-tape {
+  display: none;
+}
+
+.unified-page .footer-inner {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.unified-page .footer-name {
+  color: var(--cream);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.unified-page .social-link {
+  border: 1px solid rgba(250, 246, 238, 0.55);
+  background: transparent;
+  color: var(--cream);
+}
+
+.unified-page .social-link:hover {
+  background: var(--tan);
+  color: var(--space-cadet);
+}
+
+.unified-page .footer-updated {
+  color: var(--cream);
+}
+
+@media (max-width: 900px) {
+  .unified-page .navbar {
+    display: flex;
+    min-height: 0;
+    padding: 1.35rem 1.25rem 1rem;
+    align-items: center;
+  }
+
+  .unified-page .marketing-home-brand {
+    font-size: clamp(2.25rem, 9vw, 3.2rem);
+  }
+
+  .unified-page .nav-toggle {
+    display: flex;
+    padding: 0.8rem 0.9rem;
+    border-radius: 999px;
+  }
+
+  .unified-page .nav-links {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    right: 1.25rem;
+    width: min(19rem, calc(100vw - 2.5rem));
+    margin: 0;
+    padding: 0.75rem;
+    border-radius: 1rem;
+  }
+
+  .unified-page .page-main,
+  .unified-page .academics-main {
+    padding: 3.5rem 1.25rem 5rem;
+  }
+
+  .unified-page .footer-inner {
+    flex-direction: column;
+  }
+}
+
+@font-face {
+  font-family: 'Perandory';
+  src:
+    url('fonts/Perandory-Condensed.5a63ba27e46177184ea3.3b95fb19a8777a2606d4b543fc18500b.woff2') format('woff2'),
+    url('fonts/Perandory-Condensed.5a63ba27e46177184ea3.3b95fb19a8777a2606d4b543fc18500b.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 /* --- Reset & Base ------------------------------------------ */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -69,24 +793,1142 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  width: clamp(610px, 52vw, 760px);
+  width: clamp(715px, calc(52vw + 105px), 870px);
   background-color: var(--olive);
   border-radius: 50px;
   padding: 0.8rem 2.5rem;
   box-shadow: 0 2px 14px rgba(79, 90, 58, 0.35);
 }
 
+/* ============================================================
+   MARKETING PORTFOLIO HOMEPAGE
+   ============================================================ */
+.marketing-home-page {
+  background: #efe7d9;
+  color: var(--space-cadet);
+}
+
+.marketing-home-page .navbar {
+  position: absolute;
+  inset: 0 0 auto 0;
+  justify-content: space-between;
+  padding: 2rem clamp(1.5rem, 4vw, 4rem) 0.75rem;
+}
+
+.marketing-home-brand {
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(2.75rem, 4.1vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: 0.015em;
+}
+
+.marketing-home-brand:hover {
+  color: var(--tan);
+}
+
+.marketing-home-brand[aria-current='page'] {
+  text-decoration: underline;
+  text-decoration-color: var(--tan);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
+}
+
+.marketing-home-page .nav-links,
+.marketing-home-page .nav-toggle {
+  background-color: var(--space-cadet);
+  box-shadow: 0 2px 14px rgba(30, 45, 72, 0.38);
+}
+
+.marketing-home-page .nav-links {
+  width: clamp(560px, 48vw, 700px);
+}
+
+.marketing-home-main {
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.marketing-section {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: clamp(7rem, 12vw, 11rem) clamp(1.5rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.marketing-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.82fr);
+  gap: clamp(2rem, 7vw, 8rem);
+  min-height: 92vh;
+  min-height: 92svh;
+  background: #f7f3eb;
+  text-align: left;
+}
+
+.marketing-hero-copy {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: clamp(1.5rem, 4vw, 4rem);
+  transform: translateY(-1rem);
+}
+
+.marketing-eyebrow {
+  display: flex;
+  width: 100%;
+  margin: 0 0 1.35rem;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  line-height: 1.35;
+  letter-spacing: 0.015em;
+  word-spacing: 0.22em;
+  white-space: nowrap;
+  animation: marketing-fall-in 0.7s ease-out 0.15s both;
+}
+
+.marketing-eyebrow-line {
+  min-width: 3rem;
+  flex: 1;
+  border-top: 1px solid currentColor;
+}
+
+.marketing-title {
+  max-width: 11ch;
+  margin: 0;
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(4.5rem, 12vw, 11rem);
+  font-weight: 400;
+  line-height: 0.84;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.marketing-title-main {
+  display: block;
+  font-size: 1.32em;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+  animation: marketing-typewriter 0.95s steps(9, end) 0.15s both;
+}
+
+.marketing-title-script {
+  display: block;
+  font-family: 'Pinyon Script', 'Brush Script MT', 'Segoe Script', cursive;
+  font-size: 1.12em;
+  font-weight: 400;
+  line-height: 0.9;
+  animation: marketing-typewriter 0.95s steps(9, end) 1.15s both;
+}
+
+@keyframes marketing-typewriter {
+  from { clip-path: inset(-30% 110% -30% -10%); }
+  to { clip-path: inset(-30% -10% -30% -10%); }
+}
+
+@keyframes marketing-fall-in {
+  from {
+    opacity: 0;
+    translate: 0 -2rem;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-title-main,
+  .marketing-title-script,
+  .marketing-eyebrow,
+  .marketing-description,
+  .marketing-portfolio-button,
+  .marketing-photo-cluster,
+  .marketing-photo-doodle,
+  .portfolio-section-heading {
+    animation: none;
+    translate: none;
+  }
+}
+
+.marketing-description {
+  width: 100%;
+  max-width: 42rem;
+  margin-top: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1.2rem, 1.55vw, 1.5rem);
+  line-height: 1.55;
+  animation: marketing-fall-in 0.75s ease-out 2.05s both;
+}
+
+.marketing-portfolio-button {
+  display: inline-flex;
+  margin-top: 1.5rem;
+  padding: 1rem 1.85rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--space-cadet);
+  border-radius: 0;
+  background: var(--space-cadet);
+  color: var(--cream);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.15rem;
+  animation: marketing-fall-in 0.75s ease-out 2.25s both;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.marketing-portfolio-button:hover,
+.marketing-portfolio-button:focus-visible {
+  background: transparent;
+  color: var(--space-cadet);
+}
+
+.marketing-photo-cluster {
+  position: relative;
+  width: min(100%, 520px);
+  justify-self: end;
+  margin-right: clamp(1.5rem, 4vw, 4rem);
+  transform: translateY(3rem);
+  animation: marketing-fall-in 0.9s ease-out 0.35s both;
+}
+
+.marketing-image-frame {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(30, 45, 72, 0.28);
+  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+  background: #eee7dc;
+  overflow: hidden;
+}
+
+.marketing-image-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 32% center;
+}
+
+.marketing-hero-sparkle {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  height: auto;
+  pointer-events: none;
+  animation: marketing-sparkles-float 3.8s ease-in-out infinite alternate;
+}
+
+.marketing-sparkle-one {
+  top: 4%;
+  left: -3.5rem;
+  width: clamp(4.5rem, 6vw, 6rem);
+}
+
+.marketing-sparkle-two {
+  top: 22%;
+  right: -2.6rem;
+  width: clamp(2.5rem, 3.5vw, 3.75rem);
+  animation-delay: -1.1s;
+  animation-duration: 4.4s;
+}
+
+.marketing-sparkle-three {
+  bottom: 25%;
+  left: -2.2rem;
+  width: clamp(2.25rem, 3vw, 3.25rem);
+  animation-delay: -2.4s;
+  animation-duration: 3.4s;
+}
+
+.marketing-sparkle-four {
+  right: -3.2rem;
+  bottom: 6%;
+  width: clamp(3.5rem, 5vw, 5rem);
+  animation-delay: -0.6s;
+  animation-duration: 4.8s;
+}
+
+.marketing-sparkle-five {
+  top: -1.6rem;
+  right: 18%;
+  width: clamp(1.8rem, 2.5vw, 2.75rem);
+  animation-delay: -3s;
+  animation-duration: 3.1s;
+}
+
+@keyframes marketing-sparkles-float {
+  from {
+    translate: 0 -0.35rem;
+    rotate: -1.5deg;
+  }
+  to {
+    translate: 0 0.55rem;
+    rotate: 1.5deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-eyebrow,
+  .marketing-description,
+  .marketing-portfolio-button,
+  .marketing-photo-cluster,
+  .marketing-hero-sparkle,
+  .marketing-biography-sparkle {
+    animation: none;
+    translate: none;
+    rotate: none;
+  }
+}
+
+.marketing-biography {
+  min-height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-inline: clamp(3rem, 11vw, 11rem);
+  padding-top: clamp(4rem, 6vw, 6rem);
+  padding-bottom: clamp(2.5rem, 4vw, 4rem);
+  background: var(--space-cadet);
+  color: var(--cream);
+}
+
+.marketing-biography-content {
+  width: 100%;
+  margin-inline: 0;
+}
+
+.marketing-biography .marketing-section-title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  gap: clamp(0.75rem, 1.5vw, 1.5rem);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  letter-spacing: 0.025em;
+  transform: translateY(-1rem);
+}
+
+.biography-title-wave {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  color: currentColor;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.6;
+  letter-spacing: -0.18em;
+  white-space: nowrap;
+  opacity: 0.85;
+}
+
+.marketing-biography-copy {
+  display: grid;
+  gap: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1.2rem, 1.55vw, 1.5rem);
+  line-height: 1.7;
+  transform: translateY(-2rem);
+}
+
+.marketing-biography-body {
+  display: grid;
+  grid-template-columns: minmax(320px, 400px) minmax(0, 1fr);
+  gap: clamp(1.75rem, 3vw, 3rem);
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.marketing-biography-photo-cluster {
+  position: relative;
+  width: min(100%, 400px);
+  justify-self: start;
+  margin-bottom: -2rem;
+  transform: translateY(-2rem);
+}
+
+.marketing-biography-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(245, 239, 230, 0.34);
+  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.marketing-biography-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 62%;
+}
+
+.marketing-biography-sparkle {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  height: auto;
+  pointer-events: none;
+  animation: marketing-sparkles-float 4s ease-in-out infinite alternate;
+}
+
+.marketing-biography-sparkle-one {
+  top: -1.75rem;
+  left: -2.25rem;
+  width: clamp(3rem, 4vw, 4rem);
+}
+
+.marketing-biography-sparkle-two {
+  top: 24%;
+  right: -1.75rem;
+  width: clamp(2rem, 2.8vw, 2.75rem);
+  animation-delay: -1.2s;
+}
+
+.marketing-biography-sparkle-three {
+  bottom: 20%;
+  left: -1.5rem;
+  width: clamp(1.9rem, 2.6vw, 2.5rem);
+  animation-delay: -2.5s;
+  animation-duration: 3.5s;
+}
+
+.marketing-biography-sparkle-four {
+  right: 10%;
+  bottom: -1.6rem;
+  width: clamp(2.5rem, 3.5vw, 3.4rem);
+  animation-delay: -0.7s;
+  animation-duration: 4.6s;
+}
+
+.reveal-fall {
+  opacity: 0;
+  translate: 0 -2rem;
+  transition: opacity 0.75s ease-out, translate 0.75s ease-out;
+}
+
+.reveal-fall.is-visible {
+  opacity: 1;
+  translate: 0 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-fall {
+    opacity: 1;
+    translate: none;
+    transition: none;
+  }
+}
+
+.marketing-skills {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: auto;
+  padding-top: clamp(2.5rem, 4vw, 4rem);
+  padding-bottom: clamp(3rem, 5vw, 4.5rem);
+  background:
+    linear-gradient(90deg, rgba(79, 90, 58, 0.09) 1px, transparent 1px),
+    linear-gradient(rgba(79, 90, 58, 0.09) 1px, transparent 1px),
+    var(--cream);
+  background-size: 42px 42px;
+  color: var(--olive);
+  text-align: center;
+}
+
+.marketing-skills .marketing-section-title {
+  max-width: none;
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 8.5vw, 8rem);
+  letter-spacing: 0.025em;
+  word-spacing: normal;
+  white-space: nowrap;
+}
+
+.marketing-skills-layout {
+  display: grid;
+  width: min(100%, 1180px);
+  gap: clamp(2rem, 4vw, 4rem);
+  margin-top: clamp(1.75rem, 3vw, 2.75rem);
+}
+
+.marketing-skills-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: clamp(0.9rem, 2vw, 1.5rem);
+}
+
+.marketing-skill-card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 112px;
+  padding: 1.25rem 1.4rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 0;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 9px 20px rgba(30, 45, 72, 0.12);
+}
+
+.marketing-skill-logo {
+  display: block;
+  width: clamp(3.25rem, 4.5vw, 4.25rem);
+  height: clamp(3.25rem, 4.5vw, 4.25rem);
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.marketing-skill-logo-wordmark {
+  width: min(100%, 8.5rem);
+  height: 4.25rem;
+}
+
+.marketing-skill-logo-square {
+  width: 4.25rem;
+}
+
+.marketing-skill-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.marketing-skill-lockup span {
+  color: #1c2b33;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.marketing-skill-card h3 {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1rem, 1.4vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--space-cadet);
+}
+
+.marketing-certifications-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.marketing-certification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  color: var(--space-cadet);
+  text-align: left;
+}
+
+.marketing-certification-ribbon {
+  width: clamp(4.25rem, 5.5vw, 5.25rem);
+  height: auto;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.marketing-certification-star {
+  fill: currentColor;
+  stroke: none;
+}
+
+.marketing-certification h3 {
+  max-width: 15rem;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.marketing-section-title {
+  max-width: 10ch;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.75rem, 10vw, 9rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.marketing-footer {
+  position: relative;
+  z-index: 2;
+  padding: clamp(3.5rem, 7vw, 6rem) clamp(1.5rem, 6vw, 6rem) 2rem;
+  border-top: 5px solid var(--tan);
+  background: var(--space-cadet);
+  color: var(--off-white);
+}
+
+.marketing-footer-inner {
+  display: flex;
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.marketing-footer-name {
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+}
+
+.marketing-footer-connect {
+  min-width: min(100%, 460px);
+}
+
+.marketing-footer-connect > p {
+  margin-bottom: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+.marketing-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.marketing-footer-links a {
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid rgba(250, 246, 238, 0.55);
+  border-radius: 999px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.marketing-footer-links a:hover,
+.marketing-footer-links a:focus-visible {
+  background: var(--off-white);
+  color: var(--space-cadet);
+  transform: translateY(-2px);
+}
+
+.marketing-footer-note {
+  width: min(100%, 1180px);
+  margin: clamp(3rem, 6vw, 5rem) auto 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(250, 246, 238, 0.25);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+}
+
+.marketing-portfolio-main {
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.portfolio-empty-stage {
+  display: grid;
+  min-height: 92vh;
+  min-height: 92svh;
+  padding: clamp(10rem, 15vw, 13rem) clamp(1.5rem, 7vw, 7rem) 5rem;
+  grid-template-columns: minmax(0, 0.8fr) minmax(520px, 1.2fr);
+  align-items: start;
+  gap: clamp(1.5rem, 2.5vw, 2.75rem);
+  background:
+    linear-gradient(90deg, rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    #f7f3eb;
+  background-size: 42px 42px;
+}
+
+.portfolio-page-title {
+  position: relative;
+  top: -1rem;
+  grid-column: 1 / -1;
+  width: fit-content;
+  margin: 0 auto clamp(0.75rem, 2vw, 1.5rem);
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(4.5rem, 9vw, 8rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0.035em;
+  text-align: center;
+}
+
+.portfolio-section-copy {
+  min-width: 0;
+}
+
+.portfolio-section-heading {
+  width: fit-content;
+  margin: 0;
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+  animation: marketing-typewriter 1.7s steps(12, end) 0.15s both;
+}
+
+.portfolio-section-description {
+  max-width: 48rem;
+  margin: 0.75rem 0 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1.2rem, 1.55vw, 1.5rem);
+  line-height: 42px;
+}
+
+.portfolio-section-description + .portfolio-section-description {
+  margin-top: 42px;
+}
+
+.portfolio-social-gallery {
+  display: grid;
+  width: min(58vw, 60rem);
+  max-width: none;
+  justify-self: start;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.5rem, 1vw, 0.9rem);
+}
+
+.portfolio-social-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
+  box-shadow: 0 0.7rem 1.5rem rgba(30, 45, 72, 0.12);
+}
+
+.portfolio-social-gallery img:nth-child(even) {
+  transform: translateY(168px);
+}
+
+.portfolio-followup-section {
+  display: grid;
+  min-height: 72vh;
+  padding: clamp(5rem, 8vw, 8rem) clamp(1.5rem, 4vw, 4rem);
+  padding-top: clamp(2rem, 4vw, 3.5rem);
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  align-items: center;
+  gap: clamp(2.5rem, 4vw, 4rem);
+  background:
+    linear-gradient(90deg, rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    #f7f3eb;
+  background-size: 42px 42px;
+}
+
+.portfolio-uiux-gallery {
+  display: grid;
+  width: min(100%, 54rem);
+  justify-self: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.portfolio-uiux-column {
+  display: grid;
+  align-content: start;
+  gap: 1.5rem;
+}
+
+.portfolio-uiux-gallery img {
+  display: block;
+  width: 100%;
+  border-radius: 0.65rem;
+  box-shadow: 0 0.85rem 2rem rgba(30, 45, 72, 0.16);
+}
+
+.portfolio-uiux-copy {
+  position: relative;
+  top: -3rem;
+  min-width: 0;
+}
+
+.portfolio-followup-section .portfolio-section-heading {
+  margin-left: auto;
+  text-align: right;
+}
+
+.portfolio-uiux-description {
+  max-width: 48rem;
+  margin: 1rem 0 0 auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1.2rem, 1.55vw, 1.5rem);
+  line-height: 42px;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .portfolio-empty-stage {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .portfolio-social-gallery {
+    max-width: 30rem;
+    justify-self: start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-followup-section {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-uiux-gallery {
+    max-width: 42rem;
+  }
+
+  .portfolio-uiux-copy {
+    top: 0;
+  }
+
+}
+
+.marketing-portfolio-hero {
+  display: grid;
+  min-height: 92vh;
+  min-height: 92svh;
+  padding: clamp(10rem, 15vw, 13rem) clamp(1.5rem, 7vw, 7rem) clamp(5rem, 8vw, 7rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.75fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 8rem);
+  background:
+    linear-gradient(90deg, rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+    #f7f3eb;
+  background-size: 42px 42px;
+}
+
+.marketing-portfolio-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.portfolio-home-eyebrow {
+  margin-bottom: 1.25rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  letter-spacing: 0.06em;
+  word-spacing: 0.2em;
+}
+
+.portfolio-home-subtitle {
+  max-width: 34rem;
+  margin-top: 2rem;
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.45;
+}
+
+.portfolio-coming-soon {
+  position: relative;
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border: 1px solid rgba(30, 45, 72, 0.18);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 16px 35px rgba(30, 45, 72, 0.14);
+  text-align: left;
+}
+
+.portfolio-coming-soon::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.55rem;
+  border-radius: 0.9rem 0.9rem 0 0;
+  background: var(--tan);
+  content: '';
+}
+
+.portfolio-coming-soon-kicker {
+  margin-bottom: 1rem;
+  color: var(--caput);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.portfolio-coming-soon h2 {
+  margin: 0 0 1rem;
+  color: var(--space-cadet);
+  font-family: 'Perandory', 'Playfair Display', serif;
+  font-size: clamp(2.25rem, 4.5vw, 4rem);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.portfolio-coming-soon > p:not(.portfolio-coming-soon-kicker) {
+  color: var(--coffee);
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.portfolio-coming-soon a {
+  display: inline-flex;
+  min-height: 46px;
+  margin-top: 1.75rem;
+  padding: 0.7rem 1.2rem;
+  align-items: center;
+  border: 1px solid var(--space-cadet);
+  background: var(--space-cadet);
+  color: var(--off-white);
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.portfolio-coming-soon a:hover,
+.portfolio-coming-soon a:focus-visible {
+  background: transparent;
+  color: var(--space-cadet);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .marketing-portfolio-hero {
+    min-height: auto;
+    padding-top: 10rem;
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-portfolio-copy {
+    width: min(100%, 42rem);
+  }
+
+  .portfolio-coming-soon {
+    width: min(100%, 38rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-empty-stage {
+    padding-top: 8.5rem;
+  }
+
+  .marketing-portfolio-hero {
+    padding-top: 8.5rem;
+    gap: 2.5rem;
+  }
+
+  .portfolio-home-eyebrow {
+    white-space: normal;
+  }
+}
+
+@media (min-width: 901px) {
+  .marketing-skills-layout {
+    grid-template-columns: minmax(180px, 230px) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .marketing-skills-grid {
+    order: 2;
+  }
+
+  .marketing-certifications-grid {
+    order: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .marketing-certification {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .marketing-home-page .navbar {
+    position: absolute;
+    display: flex;
+    min-height: 0;
+    padding: 1rem;
+  }
+
+  .marketing-home-page .nav-links {
+    width: auto;
+  }
+
+  .marketing-section {
+    padding-inline: clamp(1.5rem, 7vw, 4rem);
+  }
+
+  .marketing-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.8fr);
+    gap: clamp(1.5rem, 5vw, 3rem);
+  }
+
+  .marketing-biography-body {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-biography-copy {
+    transform: none;
+  }
+
+  .marketing-biography-photo-cluster {
+    width: min(100%, 340px);
+    justify-self: start;
+    margin-bottom: 0;
+    transform: none;
+  }
+
+  .marketing-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .marketing-certifications-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .marketing-section {
+    min-height: 100svh;
+    padding-block: 6rem;
+  }
+
+  .marketing-title {
+    font-size: clamp(4rem, 22vw, 6.5rem);
+  }
+
+  .marketing-hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-top: 7.5rem;
+  }
+
+  .marketing-skills-grid {
+    gap: 1rem;
+  }
+
+  .marketing-skills .marketing-section-title {
+    font-size: clamp(1.75rem, 7.5vw, 2.1rem);
+  }
+
+  .marketing-skill-card {
+    min-height: 145px;
+    padding: 1rem 0.75rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .marketing-skill-logo {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .marketing-skill-logo-wordmark {
+    width: min(100%, 7rem);
+    height: 3.25rem;
+  }
+
+  .marketing-footer-inner {
+    flex-direction: column;
+  }
+
+  .marketing-footer-connect {
+    min-width: 0;
+  }
+
+  .marketing-certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .marketing-hero-copy {
+    transform: translateY(-1.5rem);
+  }
+
+  .marketing-photo-cluster {
+    width: min(82%, 360px);
+    justify-self: center;
+    margin-right: 0;
+    transform: none;
+  }
+
+  .marketing-sparkle-one {
+    left: -2.5rem;
+  }
+
+  .marketing-sparkle-two,
+  .marketing-sparkle-four {
+    right: -2rem;
+  }
+
+  .marketing-section-title {
+    font-size: clamp(3.25rem, 18vw, 5.5rem);
+  }
+
+}
+
 .nav-links a {
+  display: inline-flex;
+  padding: 0.35rem 0.65rem;
+  align-items: center;
+  border-radius: 999px;
   font-size: 0.85rem;
   color: var(--cream);
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition: color 0.2s;
+  transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 
 .nav-links a:hover {
   color: var(--tan);
+}
+
+.nav-links a[aria-current='page'] {
+  background: var(--off-white);
+  color: var(--space-cadet);
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(15, 24, 40, 0.2);
+}
+
+.nav-links a[aria-current='page']:hover {
+  color: var(--space-cadet);
 }
 
 .nav-toggle {
@@ -1477,6 +3319,24 @@ a {
 
 .journal-featured {
   padding: 2.5rem 3.5rem 2.5rem;
+  border-top: 4px solid var(--tan) !important;
+  background-color: var(--space-cadet) !important;
+  color: var(--off-white);
+}
+
+.journal-featured .journal-season,
+.journal-featured .journal-toggle-btn {
+  color: #f2d68f;
+}
+
+.journal-featured .journal-tag {
+  border-color: rgba(250, 246, 238, 0.46);
+  background: rgba(250, 246, 238, 0.12);
+  color: var(--off-white);
+}
+
+.journal-featured .card-text {
+  color: var(--off-white);
 }
 
 .journal-season {
@@ -1501,8 +3361,9 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #6D88A7;
-  background: rgba(109, 136, 167, 0.12);
+  color: var(--olive);
+  background: rgba(79, 90, 58, 0.12);
+  border: 1px solid rgba(79, 90, 58, 0.24);
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
 }
@@ -1599,45 +3460,96 @@ a {
   line-height: 1.6;
 }
 
-.journal-card-blue { background-color: #6D88A7 !important; color: #fff; }
+.journal-card-blue { background-color: #d2aa45 !important; color: var(--space-cadet); }
 .journal-card-blue .journal-future-season,
-.journal-card-blue .journal-future-text { color: #fff; }
+.journal-card-blue .journal-future-text { color: var(--space-cadet); }
 
-.journal-card-sage { background-color: #A9B18A !important; color: #fff; }
+.journal-card-sage { background-color: #68764f !important; color: var(--off-white); }
 .journal-card-sage .journal-future-season,
-.journal-card-sage .journal-future-text { color: #fff; }
+.journal-card-sage .journal-future-text { color: var(--off-white); }
 
-.journal-card-beige { background-color: #E7D9C3 !important; }
+.journal-card-beige { background-color: #925955 !important; color: var(--off-white); }
+.journal-card-beige .journal-future-season,
+.journal-card-beige .journal-future-text { color: var(--off-white); }
 
 .journal-card-navy {
-  background-color: #1E2D48 !important;
-  color: #fff;
+  background-color: var(--slate-gray) !important;
+  color: var(--off-white);
 }
 .journal-card-navy .journal-index-title,
-.journal-card-navy .journal-index-list li { color: #fff; }
+.journal-card-navy .journal-index-list li { color: var(--off-white); }
 
-.journal-card-kraft { background-color: #D2B48C !important; }
+.journal-card-kraft { background-color: #c79c43 !important; color: var(--space-cadet); }
 .journal-card-kraft .journal-band-title { color: #1E2D48; }
 
+.journal-card-kraft .journal-index-list,
+.journal-card-kraft .journal-index-list li,
+.journal-card-kraft .card-text {
+  color: var(--space-cadet);
+}
+
+.journal-page .washi-caput {
+  background-color: rgba(104, 45, 45, 0.78);
+}
+
+.journal-page .washi-tan {
+  border-color: rgba(30, 45, 72, 0.16);
+  background-color: rgba(210, 155, 39, 0.8);
+}
+
+.journal-page .washi-slate {
+  background-color: rgba(30, 45, 72, 0.76);
+}
+
 /* --- Research Page ---------------------------------------- */
-.research-layout {
-  display: flex;
-  gap: 4rem;
-  align-items: flex-start;
-  margin-top: 1rem;
+.research-showcase {
+  display: grid;
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  gap: clamp(3.5rem, 6vw, 5.5rem);
 }
 
-.research-right {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.research-feature {
+  display: grid;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  border: 1px solid rgba(30, 45, 72, 0.3);
+  border-top: 4px solid var(--tan);
+  border-radius: 0.55rem;
+  background: rgba(255, 253, 248, 0.98);
+  box-shadow: 0 0.7rem 1.6rem rgba(30, 45, 72, 0.1);
 }
 
-.research-card {
-  width: 520px;
-  transform: rotate(-1deg);
-  box-shadow: 4px 6px 20px rgba(37, 52, 79, 0.22);
-  padding: 1.2rem 1.6rem !important;
+.research-kicker {
+  margin: 0 0 0.75rem;
+  color: var(--olive);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.research-feature h3,
+.research-poster-copy h3 {
+  margin: 0;
+  color: var(--space-cadet);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.research-feature h3 {
+  max-width: 24ch;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.research-project-meta {
+  display: flex;
+  margin-top: 1.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
 }
 
 .research-status {
@@ -1651,14 +3563,34 @@ a {
   border: 1px solid rgba(99, 32, 36, 0.22);
   border-radius: 20px;
   padding: 0.2rem 0.65rem;
-  margin-bottom: 0.55rem;
+  margin: 0;
 }
 
 .research-date {
-  font-size: 0.85rem;
+  margin: 0;
   color: var(--slate-gray);
+  font-size: 0.95rem;
   letter-spacing: 0.03em;
-  margin-bottom: 0.65rem;
+}
+
+.research-summary {
+  max-width: 39rem;
+  margin: 1.15rem 0 0;
+  font-size: clamp(1.05rem, 1.35vw, 1.18rem);
+  line-height: 1.6;
+}
+
+.research-feature-details {
+  padding-left: clamp(1.75rem, 3vw, 3rem);
+  border-left: 1px solid rgba(30, 45, 72, 0.16);
+}
+
+.research-feature-details h4 {
+  margin: 0 0 1rem;
+  color: var(--space-cadet);
+  font-size: 0.9rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
 .research-skills {
@@ -1671,41 +3603,47 @@ a {
 .skill-tag {
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--slate-gray);
-  background: rgba(97, 120, 145, 0.1);
-  border: 1px solid rgba(97, 120, 145, 0.28);
+  color: var(--space-cadet);
+  background: rgba(30, 45, 72, 0.08);
+  border: 1px solid rgba(30, 45, 72, 0.34);
   border-radius: 20px;
   padding: 0.2rem 0.6rem;
   letter-spacing: 0.03em;
 }
 
-.research-postcard {
-  width: 430px;
-  transform: rotate(0.8deg);
-  box-shadow: 4px 6px 20px rgba(37, 52, 79, 0.22);
-}
-
-.research-postcard .card-text {
-  font-size: 0.85rem;
-}
-
 .research-responsibilities {
   list-style: disc;
-  padding-left: 1.1rem;
+  margin: 0;
+  padding-left: 1.2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
-  font-size: 0.92rem;
+  gap: 0.8rem;
+  color: var(--space-cadet);
+  font-size: 1.02rem;
   line-height: 1.55;
-  color: var(--coffee);
-  margin-top: 0.6rem;
-  font-weight: 300;
+}
+
+.research-poster-feature {
+  display: grid;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  grid-template-columns: minmax(300px, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(3rem, 6vw, 5.5rem);
+  border: 1px solid rgba(30, 45, 72, 0.26);
+  border-left: 4px solid var(--olive);
+  border-radius: 0.55rem;
+  background: rgba(231, 217, 195, 0.58);
 }
 
 .research-photo {
   position: relative;
-  width: 430px;
-  transform: rotate(2deg);
+  width: 100%;
+  margin: 0;
+  padding: 0.65rem 0.65rem 0.9rem;
+  border-radius: 0.65rem;
+  background: var(--off-white);
+  box-shadow: 0 0.75rem 1.65rem rgba(30, 45, 72, 0.14);
+  transform: rotate(-0.4deg);
 }
 
 .research-photo img {
@@ -1714,20 +3652,58 @@ a {
   display: block;
   cursor: zoom-in;
   transition: opacity 0.15s;
-  box-shadow: 5px 8px 22px rgba(37, 52, 79, 0.22);
+  border-radius: 0.35rem;
 }
 
 .research-photo img:hover { opacity: 0.88; }
 
-.research-photo .polaroid-caption {
-  font-family: 'DM Sans', sans-serif;
+.research-photo figcaption {
+  margin-top: 0.8rem;
+  color: var(--olive);
   font-size: 0.95rem;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0.05em;
-  opacity: 1;
-  color: var(--space-cadet);
-  margin-top: 0.6rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.research-poster-copy h3 {
+  max-width: 19ch;
+  font-size: clamp(2.1rem, 3.3vw, 3.35rem);
+}
+
+.research-poster-copy > p:not(.research-kicker) {
+  max-width: 40rem;
+  margin: 1.15rem 0 0;
+  font-size: clamp(1.05rem, 1.45vw, 1.22rem);
+  line-height: 1.65;
+}
+
+.research-poster-copy .research-poster-lead {
+  color: var(--olive);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .research-feature,
+  .research-poster-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .research-feature-details {
+    padding: 2rem 0 0;
+    border-top: 1px solid rgba(30, 45, 72, 0.2);
+    border-left: 0;
+  }
+
+  .research-photo {
+    max-width: 38rem;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .research-feature {
+    padding: 1.5rem;
+  }
 }
 
 /* --- Placeholder card -------------------------------------- */
@@ -1761,8 +3737,6 @@ a {
 .events-card:hover      { transform: rotate(-1deg)   scale(1.03); box-shadow: 6px 10px 28px rgba(37,52,79,0.26); }
 .academics-card:hover   { transform: rotate(-1deg)   scale(1.03); box-shadow: 6px 10px 28px rgba(37,52,79,0.26); }
 .academics-card:nth-child(even):hover { transform: rotate(1.2deg) scale(1.03); box-shadow: 6px 10px 28px rgba(37,52,79,0.26); }
-.research-card:hover    { transform: rotate(-1deg)   scale(1.03); box-shadow: 6px 10px 28px rgba(37,52,79,0.26); }
-.research-postcard:hover { transform: rotate(0.8deg) scale(1.03); box-shadow: 6px 10px 28px rgba(37,52,79,0.26); }
 .postcard:hover         { transform: rotate(-0.8deg) scale(1.03); box-shadow: 6px 10px 28px rgba(37,52,79,0.26); }
 .placeholder-card:hover { transform: rotate(-1deg)   scale(1.03); box-shadow: 6px 10px 28px rgba(37,52,79,0.26); }
 
@@ -1899,6 +3873,10 @@ a {
   margin-left: 28% !important;
 }
 
+.portfolio-page .page-main .section-header {
+  margin-left: 28% !important;
+}
+
 .research-page .page-main .section-header {
   margin-left: 29% !important;
 }
@@ -1951,11 +3929,18 @@ a {
 }
 
 .research-subtitle,
-.gallery-subtitle {
+.gallery-subtitle,
+.portfolio-subtitle {
   font-family: 'Courier Prime', monospace;
   font-size: 1.1rem;
   color: #111;
   margin: 0.3rem 0 0 0;
+}
+
+.portfolio-intro {
+  max-width: 720px;
+  margin: 1rem auto 0;
+  padding: 2.25rem 2.5rem;
 }
 
 .academics-bio {
@@ -2354,10 +4339,28 @@ a {
   top: 1px;
 }
 
+.gallery-page .washi-slate {
+  background-color: rgba(30, 45, 72, 0.88);
+}
+
+.gallery-page .washi-coffee {
+  background-color: rgba(210, 155, 39, 0.88);
+}
+
+.gallery-page .washi-caput {
+  background-color: rgba(104, 45, 45, 0.84);
+}
+
+.gallery-page .washi-tan {
+  border-color: rgba(30, 45, 72, 0.16);
+  background-color: rgba(79, 90, 58, 0.82);
+}
+
 .gallery-item-1 { transform: rotate(-1.5deg); }
 .gallery-item-2 { transform: rotate(2deg); }
 .gallery-item-3 { transform: rotate(-1deg); }
 .gallery-item-4 { transform: rotate(1.5deg); }
+.gallery-item-5 { transform: rotate(-0.7deg); }
 
 .gallery-item:hover {
   transform: rotate(0deg) scale(1.02);
@@ -3017,7 +5020,9 @@ a {
   .academics-bio { width: auto; max-width: 100%; }
   .journal-page .page-main .section-header { margin-left: 5% !important; margin-top: 2.5rem !important; }
   .gallery-page .page-main .section-header { margin-left: 5% !important; margin-top: 2.5rem !important; display: block; }
+  .portfolio-page .page-main .section-header { margin-left: 5% !important; margin-top: 2.5rem !important; display: block; }
   .gallery-subtitle { max-width: 100%; white-space: normal; }
+  .portfolio-subtitle { max-width: 100%; white-space: normal; }
   .research-page .page-main .section-header { margin-left: 5% !important; margin-top: 2.5rem !important; }
 
   /* Journal: stack the featured entry above the side cards (was squished side-by-side) */
@@ -3057,9 +5062,6 @@ a {
   .gallery-grid { gap: 0.8rem; }
   .gallery-item { width: calc(50% - 0.6rem); margin: 0; }
 
-  /* Research */
-  .research-layout { flex-direction: column; gap: 2rem; }
-  .research-card { width: 100%; max-width: 100%; }
 }
 
 @media (max-width: 600px) {
@@ -3124,9 +5126,6 @@ a {
   .gallery-img { height: 150px; }
 
   /* Research */
-  .research-layout { flex-direction: column; gap: 2rem; }
-  .research-card { width: 100%; max-width: 100%; }
-  .research-postcard { width: 100%; max-width: 100%; }
   .research-photo { width: 100%; max-width: 100%; height: auto; }
 
   /* Academics */
@@ -3315,4 +5314,1146 @@ a {
     bottom: 0;
     transform: translateX(-50%) translateY(32%);
   }
+}
+
+/* ============================================================
+   FINAL MOBILE LAYOUT
+   ============================================================ */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Navigation */
+  .marketing-home-page .navbar,
+  .unified-page .navbar {
+    position: relative;
+    inset: auto;
+    display: flex;
+    min-height: 0;
+    padding: 1.1rem 1.1rem 0.85rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f3eb;
+  }
+
+  .portfolio-page .navbar,
+  .unified-page .navbar {
+    background:
+      linear-gradient(90deg, rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+      linear-gradient(rgba(79, 90, 58, 0.06) 1px, transparent 1px),
+      #f7f3eb;
+    background-size: 42px 42px;
+  }
+
+  .marketing-home-page .marketing-home-brand,
+  .unified-page .marketing-home-brand {
+    max-width: calc(100% - 4.25rem);
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    line-height: 0.95;
+    white-space: nowrap;
+  }
+
+  .marketing-home-page .nav-toggle,
+  .unified-page .nav-toggle {
+    display: flex;
+    flex: 0 0 auto;
+    padding: 0.7rem 0.78rem;
+    border-radius: 999px;
+    background: var(--space-cadet);
+  }
+
+  .marketing-home-page .nav-toggle span,
+  .unified-page .nav-toggle span {
+    width: 24px;
+  }
+
+  .marketing-home-page .nav-links,
+  .unified-page .nav-links {
+    position: absolute;
+    z-index: 1000;
+    top: calc(100% + 0.2rem);
+    right: 1.1rem;
+    display: none;
+    width: min(19rem, calc(100vw - 2.2rem));
+    min-width: 0;
+    margin: 0;
+    padding: 0.7rem;
+    flex-direction: column;
+    gap: 0.15rem;
+    border-radius: 1rem;
+    background: var(--space-cadet);
+  }
+
+  .marketing-home-page .nav-links.nav-open,
+  .unified-page .nav-links.nav-open {
+    display: flex;
+  }
+
+  .marketing-home-page .nav-links a,
+  .unified-page .nav-links a {
+    display: block;
+    padding: 0.65rem 0.8rem;
+    font-size: 0.92rem;
+  }
+
+  /* Home */
+  .marketing-section {
+    min-height: auto;
+    padding-inline: 1.25rem;
+  }
+
+  .marketing-hero {
+    min-height: auto;
+    padding: 4.5rem 1.25rem 5rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3rem;
+  }
+
+  .marketing-hero-copy {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .marketing-eyebrow {
+    margin-bottom: 1.1rem;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.65rem;
+    font-size: clamp(0.78rem, 3.5vw, 0.95rem);
+    white-space: normal;
+  }
+
+  .marketing-eyebrow-line {
+    min-width: 2rem;
+  }
+
+  .marketing-title {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(3.15rem, 17vw, 4.65rem);
+    line-height: 0.88;
+  }
+
+  .marketing-title-main,
+  .marketing-title-script {
+    font-size: 1.08em;
+  }
+
+  .marketing-title-main {
+    letter-spacing: 0.01em;
+  }
+
+  .marketing-description {
+    max-width: 31rem;
+    margin-top: 1.5rem;
+    font-size: 1.12rem;
+    line-height: 1.5;
+  }
+
+  .marketing-portfolio-button {
+    min-height: 48px;
+    margin-top: 1.25rem;
+    padding: 0.85rem 1.3rem;
+    font-size: 1.05rem;
+  }
+
+  .marketing-photo-cluster {
+    width: min(82vw, 390px);
+    justify-self: center;
+    margin: 0;
+    transform: none;
+  }
+
+  .marketing-sparkle-one { left: -1.4rem; }
+  .marketing-sparkle-two { right: -1rem; }
+  .marketing-sparkle-three { left: -1rem; }
+  .marketing-sparkle-four { right: -1.1rem; }
+
+  .marketing-biography {
+    padding: 3.75rem 1.25rem 4.5rem;
+  }
+
+  .marketing-biography .marketing-section-title {
+    width: 100%;
+    gap: 0.75rem;
+    font-size: clamp(3rem, 16vw, 4.6rem);
+    transform: none;
+  }
+
+  .biography-title-wave {
+    font-size: clamp(1.25rem, 7vw, 2rem);
+  }
+
+  .marketing-biography-body {
+    margin-top: 2.25rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+  }
+
+  .marketing-biography-photo-cluster {
+    width: min(78vw, 330px);
+    justify-self: center;
+    margin: 0;
+    transform: none;
+  }
+
+  .marketing-biography-copy {
+    gap: 1.35rem;
+    font-size: 1.1rem;
+    line-height: 1.58;
+    transform: none;
+  }
+
+  .marketing-biography-sparkle-one { left: -1.15rem; }
+  .marketing-biography-sparkle-two { right: -1rem; }
+  .marketing-biography-sparkle-three { left: -0.9rem; }
+
+  .marketing-skills {
+    padding: 3.75rem 1.25rem 4.5rem;
+  }
+
+  .marketing-skills .marketing-section-title {
+    max-width: 12ch;
+    font-size: clamp(2.4rem, 13vw, 3.65rem);
+    line-height: 0.95;
+    white-space: normal;
+  }
+
+  .marketing-skills-layout {
+    margin-top: 2rem;
+    gap: 2.5rem;
+  }
+
+  .marketing-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+
+  .marketing-skill-card {
+    min-height: 112px;
+    padding: 0.9rem 0.7rem;
+  }
+
+  .marketing-certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .marketing-certification {
+    width: min(100%, 22rem);
+    margin-inline: auto;
+  }
+
+  /* Portfolio */
+  .portfolio-empty-stage {
+    min-height: auto;
+    padding: 4rem 1.25rem 5rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+  }
+
+  .portfolio-page-title {
+    top: 0;
+    margin-bottom: 0.5rem;
+    font-size: clamp(3.8rem, 19vw, 5.5rem);
+  }
+
+  .portfolio-section-heading {
+    max-width: 100%;
+    font-size: clamp(2.8rem, 14vw, 4rem);
+    white-space: normal;
+  }
+
+  .portfolio-section-description,
+  .portfolio-uiux-description {
+    max-width: none;
+    font-size: 1.1rem;
+    line-height: 1.58;
+  }
+
+  .portfolio-section-description + .portfolio-section-description {
+    margin-top: 1.4rem;
+  }
+
+  .portfolio-social-gallery {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .portfolio-social-gallery img:nth-child(even) {
+    transform: none;
+  }
+
+  .portfolio-followup-section {
+    min-height: auto;
+    padding: 4.5rem 1.25rem 5rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .portfolio-uiux-copy {
+    position: static;
+    order: -1;
+  }
+
+  .portfolio-followup-section .portfolio-section-heading,
+  .portfolio-uiux-description {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .portfolio-uiux-gallery {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+
+  .portfolio-uiux-column {
+    gap: 0.8rem;
+  }
+
+  /* Academics, journal, research, gallery, and CV */
+  .unified-page .page-main,
+  .unified-page .academics-main {
+    min-height: auto;
+    padding: 3.5rem 1.25rem 5rem;
+  }
+
+  .unified-page .section-header,
+  .unified-page .page-main .section-header,
+  .unified-page .academics-main .section-header,
+  .unified-page.journal-page .page-main .section-header,
+  .unified-page.research-page .page-main .section-header,
+  .unified-page.gallery-page .page-main .section-header,
+  .unified-page.cv-page .page-main .section-header {
+    position: static;
+    top: auto;
+    width: 100%;
+    margin: 0 0 2.75rem !important;
+    text-align: center;
+    transform: none;
+  }
+
+  .unified-page .section-title,
+  .unified-page .page-main .section-title,
+  .unified-page .academics-main .section-title {
+    font-size: clamp(3.3rem, 18vw, 5rem) !important;
+    line-height: 0.95;
+  }
+
+  .unified-page .academics-bio,
+  .unified-page .journal-subtitle,
+  .unified-page .research-subtitle,
+  .unified-page .gallery-subtitle {
+    position: static;
+    top: auto;
+    max-width: 30rem;
+    margin: 0.85rem auto 0;
+    font-size: 1.05rem;
+    line-height: 1.45;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .academics-page .academic-journey {
+    gap: 3.5rem;
+  }
+
+  .academics-page .academic-journey > section {
+    left: auto;
+    width: 100%;
+    transform: none;
+  }
+
+  .academics-page .academic-header-facts,
+  .academics-page .academic-facts {
+    width: 100%;
+  }
+
+  .academics-page .academic-header-facts div:first-child dd {
+    white-space: normal;
+  }
+
+  .academics-page .academic-section-heading h3,
+  .academics-page .high-school-summary h3 {
+    font-size: clamp(2.3rem, 12vw, 3.5rem);
+  }
+
+  .academics-page .coursework-grid,
+  .academics-page .honors-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .journal-layout {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .journal-left,
+  .journal-right {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .journal-featured {
+    padding: 1.6rem 1.25rem;
+  }
+
+  .journal-future-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .research-feature,
+  .research-poster-feature {
+    padding: 1.35rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  .research-feature-details {
+    padding: 1.5rem 0 0;
+    border-top: 1px solid rgba(30, 45, 72, 0.2);
+    border-left: 0;
+  }
+
+  .gallery-grid {
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .gallery-item {
+    width: min(100%, 28rem);
+    margin: 0;
+    transform: none;
+  }
+
+  .gallery-img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .unified-page .cv-doc {
+    width: 100%;
+    padding: 1.4rem 1.1rem;
+  }
+
+  .cv-entry-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .cv-entry-date {
+    width: auto;
+    min-width: 0;
+  }
+
+  .marketing-footer {
+    padding: 3rem 1.25rem 1.5rem;
+  }
+
+  .marketing-footer-inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .marketing-footer-connect {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .marketing-footer-note {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .marketing-title {
+    font-size: clamp(2.9rem, 16vw, 3.9rem);
+  }
+
+  .marketing-home-page .marketing-home-brand,
+  .unified-page .marketing-home-brand {
+    font-size: clamp(1.8rem, 9vw, 2.25rem);
+  }
+}
+
+/* Preserve the desktop-style side-by-side hero on smaller screens. */
+@media (max-width: 900px) {
+  .marketing-hero {
+    min-height: auto;
+    padding: clamp(3.5rem, 8vw, 5rem) clamp(0.75rem, 3vw, 1.5rem) clamp(3rem, 7vw, 4.5rem);
+    grid-template-columns: minmax(0, 1.2fr) minmax(120px, 0.8fr);
+    grid-auto-flow: initial;
+    align-items: center;
+    gap: clamp(0.75rem, 3vw, 2rem);
+  }
+
+  .marketing-hero-copy {
+    position: relative;
+    z-index: 2;
+    grid-row: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+
+  .marketing-eyebrow {
+    gap: 0.25rem;
+    flex-wrap: nowrap;
+    font-size: clamp(0.55rem, 1.8vw, 0.92rem);
+    word-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  .marketing-eyebrow-line {
+    min-width: 0.75rem;
+  }
+
+  .marketing-title {
+    font-size: clamp(2.35rem, 8.5vw, 4.75rem);
+  }
+
+  .marketing-description {
+    margin-top: clamp(0.9rem, 2vw, 1.5rem);
+    font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+    line-height: 1.4;
+  }
+
+  .marketing-portfolio-button {
+    min-height: 42px;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: clamp(0.82rem, 2vw, 1rem);
+  }
+
+  .marketing-photo-cluster {
+    position: relative;
+    z-index: 1;
+    grid-row: auto;
+    width: min(100%, 400px);
+    justify-self: end;
+    margin: 0;
+    transform: none;
+  }
+
+  .marketing-sparkle-one { left: -1rem; width: clamp(2rem, 5vw, 4rem); }
+  .marketing-sparkle-two { right: -0.65rem; width: clamp(1.5rem, 3.5vw, 2.75rem); }
+  .marketing-sparkle-three { left: -0.6rem; width: clamp(1.35rem, 3vw, 2.4rem); }
+  .marketing-sparkle-four { right: -0.7rem; width: clamp(1.8rem, 4vw, 3.25rem); }
+  .marketing-sparkle-five { width: clamp(1.2rem, 2.8vw, 2rem); }
+
+  .marketing-biography {
+    padding-right: clamp(0.75rem, 3vw, 1.5rem);
+    padding-left: clamp(0.75rem, 3vw, 1.5rem);
+  }
+
+  .marketing-biography-body {
+    grid-template-columns: minmax(120px, 0.75fr) minmax(0, 1.25fr);
+    align-items: start;
+    gap: clamp(0.8rem, 3vw, 2rem);
+  }
+
+  .marketing-biography-photo-cluster {
+    width: 100%;
+    justify-self: start;
+    margin: 0;
+    transform: none;
+  }
+
+  .marketing-biography-copy {
+    min-width: 0;
+    gap: clamp(0.7rem, 2vw, 1.15rem);
+    font-size: clamp(0.82rem, 1.9vw, 1.15rem);
+    line-height: 1.45;
+    transform: none;
+  }
+
+  .marketing-biography-sparkle-one {
+    top: -0.8rem;
+    left: -0.55rem;
+    width: clamp(1.5rem, 4vw, 2.75rem);
+  }
+
+  .marketing-biography-sparkle-two {
+    right: -0.5rem;
+    width: clamp(1.2rem, 3vw, 2rem);
+  }
+
+  .marketing-biography-sparkle-three {
+    left: -0.45rem;
+    width: clamp(1.1rem, 2.8vw, 1.8rem);
+  }
+
+  .marketing-biography-sparkle-four {
+    right: 8%;
+    bottom: -0.8rem;
+    width: clamp(1.4rem, 3.5vw, 2.4rem);
+  }
+
+  .marketing-skills {
+    padding-right: clamp(0.75rem, 3vw, 1.5rem);
+    padding-left: clamp(0.75rem, 3vw, 1.5rem);
+  }
+
+  .marketing-skills .marketing-section-title {
+    max-width: none;
+    font-size: clamp(1.7rem, 7vw, 3.75rem);
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .marketing-skills-layout {
+    grid-template-columns: minmax(92px, 0.65fr) minmax(0, 1.35fr);
+    align-items: stretch;
+    gap: clamp(0.7rem, 2.5vw, 1.5rem);
+  }
+
+  .marketing-skills-grid {
+    order: 2;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: clamp(0.35rem, 1.5vw, 0.75rem);
+  }
+
+  .marketing-skill-card {
+    min-height: clamp(68px, 15vw, 105px);
+    padding: clamp(0.35rem, 1.5vw, 0.75rem);
+  }
+
+  .marketing-skill-logo,
+  .marketing-skill-logo-square {
+    width: clamp(2rem, 6vw, 3.5rem);
+    height: clamp(2rem, 6vw, 3.5rem);
+  }
+
+  .marketing-skill-logo-wordmark {
+    width: min(100%, 5.5rem);
+    height: clamp(2rem, 6vw, 3.5rem);
+  }
+
+  .marketing-skill-lockup span {
+    font-size: clamp(0.42rem, 1.3vw, 0.68rem);
+  }
+
+  .marketing-certifications-grid {
+    order: 1;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: clamp(0.6rem, 2vw, 1rem);
+  }
+
+  .marketing-certification {
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+    gap: clamp(0.35rem, 1.5vw, 0.7rem);
+  }
+
+  .marketing-certification-ribbon {
+    width: clamp(2.5rem, 7vw, 4rem);
+  }
+
+  .marketing-certification h3 {
+    font-size: clamp(0.62rem, 1.8vw, 1rem);
+    line-height: 1.15;
+  }
+
+  .portfolio-empty-stage {
+    min-height: auto;
+    padding: clamp(3rem, 7vw, 5rem) clamp(0.75rem, 3vw, 1.5rem) clamp(3.5rem, 7vw, 5rem);
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    align-items: start;
+    gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+
+  .portfolio-page-title {
+    grid-column: 1 / -1;
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(3rem, 11vw, 6rem);
+  }
+
+  .portfolio-section-heading {
+    font-size: clamp(1.8rem, 6.5vw, 4.25rem);
+    white-space: nowrap;
+  }
+
+  .portfolio-section-description,
+  .portfolio-uiux-description {
+    font-size: clamp(0.7rem, 1.85vw, 1.1rem);
+    line-height: 1.45;
+  }
+
+  .portfolio-section-description + .portfolio-section-description {
+    margin-top: clamp(0.8rem, 2vw, 1.4rem);
+  }
+
+  .portfolio-social-gallery {
+    width: 100%;
+    max-width: none;
+    justify-self: start;
+    margin-top: clamp(2rem, 8vw, 4.5rem);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(0.25rem, 1vw, 0.6rem);
+  }
+
+  .portfolio-social-gallery img:nth-child(even) {
+    transform: translateY(clamp(2.5rem, 10vw, 6rem));
+  }
+
+  .portfolio-followup-section {
+    min-height: auto;
+    padding: clamp(3.5rem, 8vw, 5.5rem) clamp(0.75rem, 3vw, 1.5rem);
+    grid-template-columns: minmax(0, 1.35fr) minmax(115px, 0.65fr);
+    align-items: center;
+    gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+
+  .portfolio-uiux-gallery {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(0.35rem, 1.2vw, 0.75rem);
+  }
+
+  .portfolio-uiux-column {
+    gap: clamp(0.35rem, 1.2vw, 0.75rem);
+  }
+
+  .portfolio-uiux-copy {
+    position: relative;
+    top: 0;
+    order: initial;
+    min-width: 0;
+  }
+
+  .portfolio-followup-section .portfolio-section-heading {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .portfolio-uiux-description {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .academics-page .academics-main {
+    padding-right: clamp(0.75rem, 3vw, 1.5rem);
+    padding-left: clamp(0.75rem, 3vw, 1.5rem);
+  }
+
+  .academics-page .academic-journey {
+    gap: clamp(3rem, 7vw, 5rem);
+  }
+
+  .academics-page .academic-journey > section {
+    left: auto;
+    width: 100%;
+    margin-inline: auto;
+    transform: none;
+  }
+
+  .academics-page .academic-header-facts {
+    display: flex;
+    width: fit-content;
+    gap: 0;
+  }
+
+  .academics-page .academic-header-facts div,
+  .academics-page .academic-header-facts div + div {
+    min-width: 0;
+    padding-right: clamp(0.7rem, 2.5vw, 1.25rem);
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .academics-page .academic-header-facts div + div {
+    padding-right: 0;
+    padding-left: clamp(0.7rem, 2.5vw, 1.25rem);
+    border-left: 1px solid rgba(30, 45, 72, 0.28);
+  }
+
+  .academics-page .academic-header-facts div:first-child dd {
+    white-space: nowrap;
+  }
+
+  .academics-page .academic-section-heading {
+    margin-bottom: clamp(1rem, 3vw, 1.75rem);
+  }
+
+  .academics-page .academic-section-heading h3,
+  .academics-page .high-school-summary h3 {
+    font-size: clamp(1.75rem, 7vw, 3.5rem);
+  }
+
+  .academics-page .academic-kicker {
+    margin-bottom: 0.4rem;
+    font-size: clamp(0.55rem, 1.6vw, 0.8rem);
+  }
+
+  .academics-page .coursework-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(0.35rem, 1.2vw, 0.75rem);
+  }
+
+  .academics-page .coursework-card {
+    padding: clamp(0.45rem, 1.5vw, 0.9rem);
+    border-radius: 0.5rem;
+  }
+
+  .academics-page .coursework-term {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+    font-size: clamp(0.8rem, 2.7vw, 1.4rem);
+  }
+
+  .academics-page .coursework-card ul {
+    gap: clamp(0.3rem, 1vw, 0.55rem);
+  }
+
+  .academics-page .coursework-card li {
+    display: block;
+    font-size: clamp(0.45rem, 1.35vw, 0.78rem);
+    line-height: 1.2;
+  }
+
+  .academics-page .coursework-card li span {
+    display: block;
+    margin-bottom: 0.08rem;
+    font-size: 0.92em;
+  }
+
+  .academics-page .honors-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(0.35rem, 1.2vw, 0.75rem);
+  }
+
+  .academics-page .honors-grid > p {
+    min-height: clamp(72px, 16vw, 105px);
+    padding: clamp(0.45rem, 1.5vw, 0.9rem);
+    gap: clamp(0.3rem, 1vw, 0.6rem);
+  }
+
+  .academics-page .honors-grid i {
+    font-size: clamp(0.9rem, 3vw, 1.4rem);
+  }
+
+  .academics-page .honors-grid strong {
+    font-size: clamp(0.55rem, 1.55vw, 0.9rem);
+    line-height: 1.2;
+  }
+
+  .academics-page .honors-grid small {
+    font-size: clamp(0.48rem, 1.3vw, 0.75rem);
+  }
+
+  .academics-page .academic-highlights {
+    grid-template-columns: minmax(135px, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(0.75rem, 3vw, 2rem);
+  }
+
+  .academics-page .academic-photo-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(0.35rem, 1.2vw, 0.75rem);
+  }
+
+  .academics-page .academic-photo-card-offset {
+    margin-top: clamp(1rem, 4vw, 2.25rem);
+  }
+
+  .academics-page .academic-photo-card figcaption {
+    margin-top: 0.35rem;
+    font-size: clamp(0.48rem, 1.4vw, 0.75rem);
+  }
+
+  .academics-page .high-school-lead {
+    margin: 0.55rem 0 0.8rem;
+    font-size: clamp(0.7rem, 2vw, 1.05rem);
+  }
+
+  .academics-page .high-school-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 0.8rem;
+  }
+
+  .academics-page .high-school-stats p {
+    padding: clamp(0.4rem, 1.5vw, 0.8rem) 0.15rem;
+  }
+
+  .academics-page .high-school-stats p + p {
+    border-top: 0;
+    border-left: 1px solid rgba(30, 45, 72, 0.2);
+  }
+
+  .academics-page .high-school-stats strong {
+    font-size: clamp(0.8rem, 2.5vw, 1.35rem);
+  }
+
+  .academics-page .high-school-stats span {
+    font-size: clamp(0.42rem, 1.2vw, 0.68rem);
+  }
+
+  .academics-page .high-school-subjects {
+    gap: clamp(0.4rem, 1.5vw, 0.75rem);
+  }
+
+  .academics-page .high-school-subjects p {
+    font-size: clamp(0.55rem, 1.55vw, 0.86rem);
+    line-height: 1.35;
+  }
+
+  .academics-page .academic-cv-link {
+    margin-top: 1rem;
+    padding: 0.55rem 0.75rem;
+    font-size: clamp(0.65rem, 1.8vw, 0.9rem);
+  }
+
+  .journal-page .page-main {
+    padding-right: clamp(0.75rem, 3vw, 1.5rem);
+    padding-left: clamp(0.75rem, 3vw, 1.5rem);
+  }
+
+  .journal-layout {
+    display: grid;
+    width: 100%;
+    max-width: 1400px;
+    grid-template-columns: minmax(0, 1.75fr) minmax(105px, 0.65fr);
+    align-items: start;
+    gap: clamp(0.65rem, 2.5vw, 1.5rem);
+  }
+
+  .journal-left {
+    width: auto;
+    min-width: 0;
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+
+  .journal-right {
+    width: auto;
+    min-width: 0;
+    flex: none;
+    gap: clamp(0.65rem, 2vw, 1rem);
+  }
+
+  .journal-featured {
+    padding: clamp(0.8rem, 2.5vw, 1.6rem);
+  }
+
+  .journal-season {
+    font-size: clamp(1rem, 3.5vw, 1.55rem);
+  }
+
+  .journal-tags {
+    gap: 0.25rem;
+    margin-bottom: 0.55rem;
+  }
+
+  .journal-tag {
+    padding: 0.15rem 0.35rem;
+    font-size: clamp(0.42rem, 1.2vw, 0.65rem);
+    letter-spacing: 0.05em;
+  }
+
+  .journal-preview .card-text,
+  .journal-full .card-text {
+    margin-bottom: 0.6rem;
+    font-size: clamp(0.62rem, 1.65vw, 0.95rem);
+    line-height: 1.5;
+  }
+
+  .journal-toggle-btn {
+    margin-top: 0.25rem;
+    font-size: clamp(0.55rem, 1.5vw, 0.8rem);
+  }
+
+  .journal-future-row {
+    display: flex;
+    gap: clamp(0.45rem, 1.5vw, 0.9rem);
+  }
+
+  .journal-future-card {
+    min-width: 0;
+    padding: clamp(0.55rem, 1.8vw, 1.15rem) clamp(0.3rem, 1.2vw, 0.75rem);
+  }
+
+  .journal-future-season {
+    font-size: clamp(0.48rem, 1.35vw, 0.78rem);
+  }
+
+  .journal-future-text {
+    font-size: clamp(0.42rem, 1.15vw, 0.68rem);
+  }
+
+  .journal-index,
+  .journal-band {
+    padding: clamp(0.55rem, 1.8vw, 1rem);
+  }
+
+  .journal-index-title,
+  .journal-band-title {
+    margin-bottom: 0.45rem;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+  }
+
+  .journal-index-list {
+    gap: clamp(0.25rem, 1vw, 0.45rem);
+    font-size: clamp(0.48rem, 1.4vw, 0.75rem);
+    line-height: 1.3;
+  }
+
+  .journal-band .card-text {
+    font-size: clamp(0.5rem, 1.4vw, 0.75rem);
+    line-height: 1.35;
+  }
+
+  .research-page .page-main,
+  .gallery-page .page-main {
+    padding-right: clamp(0.75rem, 3vw, 1.5rem);
+    padding-left: clamp(0.75rem, 3vw, 1.5rem);
+  }
+
+  .research-showcase {
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+
+  .research-feature {
+    padding: clamp(0.65rem, 2vw, 1.25rem);
+    grid-template-columns: minmax(0, 1.1fr) minmax(120px, 0.9fr);
+    align-items: start;
+    gap: clamp(0.7rem, 2.5vw, 1.5rem);
+  }
+
+  .research-feature h3 {
+    font-size: clamp(1.15rem, 4.2vw, 2.25rem);
+  }
+
+  .research-kicker {
+    margin-bottom: 0.4rem;
+    font-size: clamp(0.48rem, 1.4vw, 0.72rem);
+  }
+
+  .research-project-meta {
+    margin-top: 0.75rem;
+    gap: 0.35rem;
+  }
+
+  .research-status,
+  .research-date {
+    font-size: clamp(0.48rem, 1.35vw, 0.75rem);
+  }
+
+  .research-summary {
+    margin-top: 0.7rem;
+    font-size: clamp(0.62rem, 1.7vw, 0.95rem);
+    line-height: 1.4;
+  }
+
+  .research-feature-details {
+    padding: 0 0 0 clamp(0.65rem, 2vw, 1.25rem);
+    border-top: 0;
+    border-left: 1px solid rgba(30, 45, 72, 0.2);
+  }
+
+  .research-feature-details h4 {
+    margin-bottom: 0.55rem;
+    font-size: clamp(0.5rem, 1.45vw, 0.75rem);
+  }
+
+  .research-responsibilities {
+    padding-left: 0.8rem;
+    gap: 0.4rem;
+    font-size: clamp(0.52rem, 1.45vw, 0.78rem);
+    line-height: 1.35;
+  }
+
+  .research-skills {
+    gap: 0.25rem;
+  }
+
+  .skill-tag {
+    padding: 0.12rem 0.32rem;
+    font-size: clamp(0.42rem, 1.15vw, 0.65rem);
+  }
+
+  .research-poster-feature {
+    padding: clamp(0.65rem, 2vw, 1.25rem);
+    grid-template-columns: minmax(120px, 0.8fr) minmax(0, 1.2fr);
+    align-items: center;
+    gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+
+  .research-photo {
+    width: 100%;
+    max-width: none;
+    padding: clamp(0.3rem, 1vw, 0.55rem);
+  }
+
+  .research-photo figcaption {
+    margin-top: 0.35rem;
+    font-size: clamp(0.48rem, 1.3vw, 0.72rem);
+  }
+
+  .research-poster-copy h3 {
+    font-size: clamp(1.15rem, 4.2vw, 2.35rem);
+  }
+
+  .research-poster-copy > p:not(.research-kicker) {
+    margin-top: 0.65rem;
+    font-size: clamp(0.58rem, 1.6vw, 0.88rem);
+    line-height: 1.4;
+  }
+
+  .gallery-grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+
+  .gallery-item {
+    width: calc(50% - clamp(0.4rem, 1.25vw, 0.75rem));
+    margin: 0;
+  }
+
+  .gallery-polaroid {
+    padding: clamp(0.35rem, 1.3vw, 0.7rem) clamp(0.35rem, 1.3vw, 0.7rem) clamp(0.6rem, 2vw, 1.15rem);
+  }
+
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .gallery-caption {
+    margin-top: 0.4rem;
+    font-size: clamp(0.58rem, 1.7vw, 0.82rem);
+    line-height: 1.2;
+  }
+
+  .polaroid-date {
+    font-size: clamp(0.48rem, 1.3vw, 0.68rem);
+  }
+
+  .gallery-item-1 { transform: rotate(-1.5deg); }
+  .gallery-item-2 { transform: rotate(2deg); }
+  .gallery-item-3 { transform: rotate(-1deg); }
+  .gallery-item-4 { transform: rotate(1.5deg); }
+  .gallery-item-5 { transform: rotate(-0.7deg); }
 }
