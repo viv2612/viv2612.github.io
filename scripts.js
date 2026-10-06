@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(card);
   });
 
-  document.querySelectorAll('.reveal-fall').forEach(element => {
+  document.querySelectorAll('.reveal-fall, .reveal-typewriter').forEach(element => {
     observer.observe(element);
   });
 });
